@@ -49,7 +49,7 @@ div#quiz-comparison-app {
         }
         div.answer-grid {
             display: grid;
-            grid-template-columns: 20% 20% 20% 20% 20%;
+            grid-template-columns: repeat(3, 1fr);
             max-width: 500px;
             margin: 25px auto;
             div {
@@ -91,6 +91,41 @@ div#quiz-comparison-app {
         div.submit-btn:hover {
             opacity: 0.5;
             cursor: pointer;
+        }
+        div.percent-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            margin: 25px 0px;
+            div:first-child {
+                text-align: right;
+                padding: 5px 15px 0px 0px;
+                font-weight: bold;
+            }
+            div.percent {
+                text-align: left;
+                color: $green;
+                line-height: 1em;
+                font-size: 3em;
+                font-family: 'Times New Roman', Times, serif;
+            }
+        }
+        div.percent-msg {
+            font-weight: bold;
+        }
+        div.percent-bar {
+            width: 75%;
+            max-width: 500px;
+            border-radius: 50px;
+            border: solid thick $white;
+            margin: 25px auto;
+            overflow: hidden;
+            height: 50px;
+            div.percent-fill {
+                background-color: $green;
+                width: 45%;
+                height: 50px;
+                float: right;
+            }
         }
     }
 }

@@ -37,7 +37,7 @@ div#quiz-comparison-app {
         font-family: 'Times New Roman', Times, serif; }
     div#quiz-comparison-app div.question div.answer-grid {
       display: grid;
-      grid-template-columns: 20% 20% 20% 20% 20%;
+      grid-template-columns: repeat(3, 1fr);
       max-width: 500px;
       margin: 25px auto; }
       div#quiz-comparison-app div.question div.answer-grid div {
@@ -73,5 +73,34 @@ div#quiz-comparison-app {
     div#quiz-comparison-app div.question div.submit-btn:hover {
       opacity: 0.5;
       cursor: pointer; }
+    div#quiz-comparison-app div.question div.percent-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 25px 0px; }
+      div#quiz-comparison-app div.question div.percent-grid div:first-child {
+        text-align: right;
+        padding: 5px 15px 0px 0px;
+        font-weight: bold; }
+      div#quiz-comparison-app div.question div.percent-grid div.percent {
+        text-align: left;
+        color: #69CFAB;
+        line-height: 1em;
+        font-size: 3em;
+        font-family: 'Times New Roman', Times, serif; }
+    div#quiz-comparison-app div.question div.percent-msg {
+      font-weight: bold; }
+    div#quiz-comparison-app div.question div.percent-bar {
+      width: 75%;
+      max-width: 500px;
+      border-radius: 50px;
+      border: solid thick #D8D8D8;
+      margin: 25px auto;
+      overflow: hidden;
+      height: 50px; }
+      div#quiz-comparison-app div.question div.percent-bar div.percent-fill {
+        background-color: #69CFAB;
+        width: 45%;
+        height: 50px;
+        float: right; }
 
 /*# sourceMappingURL=style.css.map */
