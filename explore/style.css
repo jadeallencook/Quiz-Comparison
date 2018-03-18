@@ -1,0 +1,94 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px; }
+
+div#quiz-comparison-app {
+  width: 100%;
+  max-width: 750px;
+  margin: 25px auto;
+  background-color: #3F424F;
+  padding: 25px 0px 25px 0px;
+  color: #D8D8D8; }
+  div#quiz-comparison-app img.logo {
+    width: 50px;
+    margin: 0px auto;
+    display: block; }
+  div#quiz-comparison-app h2.question-title {
+    font-family: 'Museo Slab';
+    font-size: 1.5em;
+    font-weight: 900; }
+  div#quiz-comparison-app div.intro-text {
+    font-weight: bold;
+    margin: 25px auto;
+    border-top: solid medium #D8D8D8;
+    border-bottom: solid medium #D8D8D8;
+    width: 75%;
+    padding: 15px 0px; }
+  div#quiz-comparison-app div.info-text {
+    margin: 0px auto;
+    width: 75%; }
+  div#quiz-comparison-app div.filters-container {
+    background-color: #82848B;
+    padding: 15px 0px;
+    margin: 25px 0px; }
+    div#quiz-comparison-app div.filters-container div.dropdown {
+      border: solid thin #D8D8D8;
+      display: block;
+      text-align: left;
+      margin: 15px auto;
+      width: 75%;
+      max-width: 340px;
+      padding: 5px 15px;
+      cursor: pointer; }
+      div#quiz-comparison-app div.filters-container div.dropdown span.arrow {
+        float: right; }
+    div#quiz-comparison-app div.filters-container div.btn-container {
+      display: block;
+      text-align: center; }
+      div#quiz-comparison-app div.filters-container div.btn-container div {
+        background-color: #D8D8D8;
+        color: #3F424F;
+        display: inline-block;
+        padding: 5px 15px;
+        width: 150px;
+        cursor: pointer;
+        font-weight: bold;
+        margin: 5px; }
+      div#quiz-comparison-app div.filters-container div.btn-container div:hover {
+        opacity: 0.5; }
+  div#quiz-comparison-app div.question {
+    width: 75%;
+    margin: 0px auto;
+    border-bottom: solid thick #82848B;
+    padding: 15px 0px; }
+    div#quiz-comparison-app div.question div.text-grid {
+      display: grid;
+      grid-template-columns: 10% 90%; }
+      div#quiz-comparison-app div.question div.text-grid div {
+        text-align: left; }
+      div#quiz-comparison-app div.question div.text-grid div.num {
+        font-family: 'Times New Roman';
+        font-size: 2em; }
+    div#quiz-comparison-app div.question div.bar-grid {
+      display: grid;
+      grid-template-columns: 20% 80%;
+      margin-top: 25px; }
+      div#quiz-comparison-app div.question div.bar-grid div {
+        text-align: center; }
+      div#quiz-comparison-app div.question div.bar-grid div.percent {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 3em;
+        text-align: left; }
+      div#quiz-comparison-app div.question div.bar-grid div.bar-container {
+        width: 95%;
+        border: solid medium #D8D8D8;
+        height: 25px;
+        border-radius: 25px;
+        margin: 15px 0px 0px 15px;
+        overflow: hidden; }
+        div#quiz-comparison-app div.question div.bar-grid div.bar-container div.bar-fill {
+          background-color: #69CFAB;
+          height: 100%; }
+
+/*# sourceMappingURL=style.css.map */

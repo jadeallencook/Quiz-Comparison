@@ -1,0 +1,117 @@
+$green: #69CFAB;
+$blue: #3F424F;
+$white: #D8D8D8;
+$grey: #82848B;
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+div#quiz-comparison-app {
+    width: 100%;
+    max-width: 750px;
+    margin: 25px auto;
+    background-color: $blue;
+    padding: 25px 0px 25px 0px;
+    color: $white;
+    img.logo {
+        width: 50px;
+        margin: 0px auto;
+        display: block;
+    }
+    h2.question-title {
+        font-family: 'Museo Slab';
+        font-size: 1.5em;
+        font-weight: 900;
+    }
+    div.intro-text {
+        font-weight: bold;
+        margin: 25px auto;
+        border-top: solid medium $white;
+        border-bottom: solid medium $white;
+        width: 75%;
+        padding: 15px 0px;
+    }
+    div.info-text {
+        margin: 0px auto;
+        width: 75%;
+    }
+    div.filters-container {
+        background-color: $grey;
+        padding: 15px 0px;
+        margin: 25px 0px;
+        div.dropdown {
+            border: solid thin $white;
+            display: block;
+            text-align: left;
+            margin: 15px auto;
+            width: 75%;
+            max-width: 340px;
+            padding: 5px 15px;
+            cursor: pointer;
+            span.arrow {
+                float: right;
+            }
+        }
+        div.btn-container {
+            display: block;
+            text-align: center;
+            div {
+                background-color: $white;
+                color: $blue;
+                display: inline-block;
+                padding: 5px 15px;
+                width: 150px;
+                cursor: pointer;
+                font-weight: bold;
+                margin: 5px;
+            }
+            div:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+    div.question {
+        width: 75%;
+        margin: 0px auto;
+        border-bottom: solid thick $grey;
+        padding: 15px 0px;
+        div.text-grid {
+            display: grid;
+            grid-template-columns: 10% 90%; 
+            div {
+                text-align: left;
+            }
+            div.num {
+                font-family: 'Times New Roman';
+                font-size: 2em;
+            }       
+        }
+        div.bar-grid {
+            display: grid;
+            grid-template-columns: 20% 80%;
+            margin-top: 25px;
+            div {
+                text-align: center;
+            }
+            div.percent {
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 3em;
+                text-align: left;
+            }
+            div.bar-container {
+                width: 95%;
+                border: solid medium $white;
+                height: 25px;
+                border-radius: 25px;
+                margin: 15px 0px 0px 15px;
+                overflow: hidden;
+                div.bar-fill {
+                    background-color: $green;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
