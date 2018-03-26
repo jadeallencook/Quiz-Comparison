@@ -8,7 +8,8 @@ div#quiz-comparison-app {
   max-width: 750px;
   margin: 25px auto;
   background-color: #3F424F;
-  padding: 25px 0px 25px 0px; }
+  padding: 25px 0px 25px 0px;
+  position: relative; }
   div#quiz-comparison-app div.question {
     color: #D8D8D8; }
     div#quiz-comparison-app div.question img {
@@ -23,18 +24,12 @@ div#quiz-comparison-app {
       font-weight: bold;
       margin: 25px 0px;
       display: block; }
-    div#quiz-comparison-app div.question div.question-grid {
-      max-width: 500px;
-      display: grid;
-      grid-template-columns: 15% 85%;
-      margin: 0px auto; }
-      div#quiz-comparison-app div.question div.question-grid div {
-        text-align: left; }
-      div#quiz-comparison-app div.question div.question-grid div.question-num {
-        color: #69CFAB;
-        line-height: 1em;
-        font-size: 3em;
-        font-family: 'Times New Roman', Times, serif; }
+    div#quiz-comparison-app div.question div.question-text {
+      font-weight: bold;
+      margin: 25px auto;
+      width: 75%;
+      min-width: 350px;
+      max-width: 500px; }
     div#quiz-comparison-app div.question div.answer-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -44,7 +39,9 @@ div#quiz-comparison-app {
         text-align: center;
         font-size: 1.5em;
         line-height: 1.75em;
-        font-weight: bold; }
+        font-weight: bold;
+        line-height: 1em;
+        margin-bottom: 15px; }
         div#quiz-comparison-app div.question div.answer-grid div div.answer-bubble {
           height: 50px;
           width: 50px;
@@ -73,34 +70,42 @@ div#quiz-comparison-app {
     div#quiz-comparison-app div.question div.submit-btn:hover {
       opacity: 0.5;
       cursor: pointer; }
-    div#quiz-comparison-app div.question div.percent-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      margin: 25px 0px; }
-      div#quiz-comparison-app div.question div.percent-grid div:first-child {
-        text-align: right;
-        padding: 5px 15px 0px 0px;
-        font-weight: bold; }
-      div#quiz-comparison-app div.question div.percent-grid div.percent {
-        text-align: left;
+    div#quiz-comparison-app div.question div.answer-container {
+      font-weight: bold;
+      margin-top: 25px;
+      display: none; }
+      div#quiz-comparison-app div.question div.answer-container span.answer-percent {
+        display: inline-block;
+        font-size: 2em;
         color: #69CFAB;
-        line-height: 1em;
-        font-size: 3em;
-        font-family: 'Times New Roman', Times, serif; }
-    div#quiz-comparison-app div.question div.percent-msg {
-      font-weight: bold; }
-    div#quiz-comparison-app div.question div.percent-bar {
-      width: 75%;
-      max-width: 500px;
-      border-radius: 50px;
-      border: solid thick #D8D8D8;
-      margin: 25px auto;
-      overflow: hidden;
-      height: 50px; }
-      div#quiz-comparison-app div.question div.percent-bar div.percent-fill {
-        background-color: #69CFAB;
-        width: 45%;
-        height: 50px;
-        float: right; }
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 100;
+        margin: 0px; }
+      div#quiz-comparison-app div.question div.answer-container div.percent-bar {
+        width: 75%;
+        max-width: 500px;
+        border-radius: 50px;
+        border: solid thick #D8D8D8;
+        margin: 15px auto 85px auto;
+        overflow: hidden;
+        height: 50px; }
+        div#quiz-comparison-app div.question div.answer-container div.percent-bar div.percent-fill {
+          background-color: #69CFAB;
+          height: 50px; }
+      div#quiz-comparison-app div.question div.answer-container div.percent-bar-title {
+        width: 75%;
+        text-align: left;
+        margin: 25px auto 0px auto;
+        max-width: 500px; }
+      div#quiz-comparison-app div.question div.answer-container div.next-btn {
+        width: 100%;
+        background-color: #82848B;
+        color: #D8D8D8;
+        position: absolute;
+        bottom: 0px;
+        padding: 25px 0px;
+        cursor: pointer; }
+      div#quiz-comparison-app div.question div.answer-container div.next-btn:hover {
+        opacity: 0.5; }
 
 /*# sourceMappingURL=style.css.map */

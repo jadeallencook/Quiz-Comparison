@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="https://www.deseretnews.com/v4/dist/app.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+
+<div id="quiz-comparison-app">
+    <div class="question">
+        <img src="../images/stone-tablets.svg" alt="stone tablets logo">
+        <h2 class="question-title">How do you compare?</h2>
+        <span>Do you think it is important to live by this principal?</span>
+        <div class="question-container">
+            <div class="question-grid">
+                <div class="question-num">1</div>
+                <div id="commandment-text">Loading...</div>
+            </div>
+            <div class="answer-grid">
+                <div>Yes</div>
+                <div>Don't Know</div>
+                <div>No</div>
+                <div>
+                    <div class="answer-bubble" data-answer="yes"></div>
+                </div>
+                <div>
+                    <div class="answer-bubble" data-answer="don't know"></div>
+                </div>
+                <div>
+                    <div class="answer-bubble" data-answer="no"></div>
+                </div>
+            </div>
+            <div class="submit-btn">SUBMIT</div>
+        </div>
+        <div class="answer-container">
+            <div class="percent-grid">
+                <div>You and</div>
+                <div class="percent" id="answer-percent">45%</div>
+            </div>
+            <div class="percent-msg">of survery participants answered "<span id="answer-text" style="display: inline-block"></span>" to this question.</div>
+            <div class="percent-bar">
+                <div class="percent-fill"></div>
+            </div>
+            <div class="next-btn">Next &#65515;</div>
+        </div>
+    </div>
+</div>
+
+<script src="app.js"></script>

@@ -2,7 +2,6 @@ $green: #69CFAB;
 $blue: #3F424F;
 $white: #D8D8D8;
 $grey: #82848B;
-
 html,
 body {
     margin: 0px;
@@ -15,6 +14,7 @@ div#quiz-comparison-app {
     margin: 25px auto;
     background-color: $blue;
     padding: 25px 0px 25px 0px;
+    position: relative;
     div.question {
         color: $white;
         img {
@@ -32,20 +32,12 @@ div#quiz-comparison-app {
             margin: 25px 0px;
             display: block;
         }
-        div.question-grid {
+        div.question-text {
+            font-weight: bold;
+            margin: 25px auto;
+            width: 75%;
+            min-width: 350px;
             max-width: 500px;
-            display: grid;
-            grid-template-columns: 15% 85%;
-            margin: 0px auto;
-            div {
-                text-align: left;
-            }
-            div.question-num {
-                color: $green;
-                line-height: 1em;
-                font-size: 3em;
-                font-family: 'Times New Roman', Times, serif;
-            }
         }
         div.answer-grid {
             display: grid;
@@ -57,6 +49,8 @@ div#quiz-comparison-app {
                 font-size: 1.5em;
                 line-height: 1.75em;
                 font-weight: bold;
+                line-height: 1em;
+                margin-bottom: 15px;
                 div.answer-bubble {
                     height: 50px;
                     width: 50px;
@@ -92,39 +86,48 @@ div#quiz-comparison-app {
             opacity: 0.5;
             cursor: pointer;
         }
-        div.percent-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            margin: 25px 0px;
-            div:first-child {
-                text-align: right;
-                padding: 5px 15px 0px 0px;
-                font-weight: bold;
-            }
-            div.percent {
-                text-align: left;
-                color: $green;
-                line-height: 1em;
-                font-size: 3em;
-                font-family: 'Times New Roman', Times, serif;
-            }
-        }
-        div.percent-msg {
+        div.answer-container {
             font-weight: bold;
-        }
-        div.percent-bar {
-            width: 75%;
-            max-width: 500px;
-            border-radius: 50px;
-            border: solid thick $white;
-            margin: 25px auto;
-            overflow: hidden;
-            height: 50px;
-            div.percent-fill {
-                background-color: $green;
-                width: 45%;
+            margin-top: 25px;
+            display: none;
+            span.answer-percent {
+                display: inline-block;
+                font-size: 2em;
+                color: $green;
+                font-family: 'Times New Roman', Times, serif;
+                font-weight: 100;
+                margin: 0px;
+            }
+            div.percent-bar {
+                width: 75%;
+                max-width: 500px;
+                border-radius: 50px;
+                border: solid thick $white;
+                margin: 15px auto 85px auto;
+                overflow: hidden;
                 height: 50px;
-                float: right;
+                div.percent-fill {
+                    background-color: $green;
+                    height: 50px;
+                }
+            }
+            div.percent-bar-title {
+                width: 75%;
+                text-align: left;
+                margin: 25px auto 0px auto;
+                max-width: 500px;
+            }
+            div.next-btn {
+                width: 100%;
+                background-color: $grey;
+                color: $white;
+                position: absolute;
+                bottom: 0px;
+                padding: 25px 0px;
+                cursor: pointer;
+            }
+            div.next-btn:hover {
+                opacity: 0.5;
             }
         }
     }
