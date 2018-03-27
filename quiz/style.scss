@@ -2,10 +2,11 @@ $green: #69CFAB;
 $blue: #3F424F;
 $white: #D8D8D8;
 $grey: #82848B;
+
 div#quiz-app {
-    width: 100%;
-    max-width: 750px;
-    margin: 25px auto;
+    width: 400px;
+    float: left;
+    margin: 15px 25px 15px 0px;
     background-color: $blue;
     padding: 25px 0px 25px 0px;
     position: relative;
@@ -20,8 +21,9 @@ div#quiz-app {
         h2 {
             font-family: 'Museo Slab';
             font-size: 1.5em;
-            font-weight: 900;
+            font-weight: 700;
             margin-top: 25px;
+            text-align: center;
         }
         span {
             font-weight: bold;
@@ -29,7 +31,6 @@ div#quiz-app {
             display: block;
         }
         div.question-text {
-            font-weight: bold;
             margin: 25px auto;
             width: 75%;
             min-width: 350px;
@@ -43,9 +44,8 @@ div#quiz-app {
                 margin: 25px auto;
                 div {
                     text-align: center;
-                    font-size: 1.5em;
+                    font-size: 1em;
                     line-height: 1.75em;
-                    font-weight: bold;
                     line-height: 1em;
                     margin-bottom: 15px;
                     div.answer-bubble {
@@ -85,9 +85,12 @@ div#quiz-app {
             }
         }
         div.answer-container {
-            font-weight: bold;
             margin-top: 25px;
             display: none;
+            text-align: center;
+            span {
+                font-weight: normal;
+            }
             span.answer-percent {
                 display: inline-block;
                 font-size: 2em;
@@ -137,10 +140,11 @@ div#quiz-app {
 
 @media only screen and (max-device-width: 480px) {
     div#quiz-app {
-        max-width: none;
+        width: 100%;
         padding: 100px 0px;
         box-sizing: border-box;
         height: 1100px;
+        margin: 25px 0px;
         div.question {
             img {
                 width: 150px;
@@ -155,6 +159,7 @@ div#quiz-app {
                 width: 90%;
                 margin: 50px auto;
                 max-width: none;
+                text-align: center;
             }
             div.question-container {
                 div.answer-grid {
@@ -183,13 +188,13 @@ div#quiz-app {
             div.answer-container {
                 font-size: 2em;
                 span.answer-text {
-                    font-size: 1.25em;
+                    font-size: 1em;
                 }
                 div.percent-bar {
                     margin-top: 50px;
                 }
                 div.next-btn {
-                    font-size: 1.5em;
+                    font-size: 1em;
                 }
             }
         }

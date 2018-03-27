@@ -1,0 +1,181 @@
+<style>div#quiz-app {width: 400px;float: left;margin: 15px 25px 15px 0px;background-color: #3F424F;padding: 25px 0px 25px 0px;position: relative;height: 500px;}div#quiz-app div.question {color: #D8D8D8;}div#quiz-app div.question img {width: 50px;margin: 0px auto;display: block;}div#quiz-app div.question h2 {font-family: 'Museo Slab';font-size: 1.5em;font-weight: 700;margin-top: 25px;text-align: center;}div#quiz-app div.question span {font-weight: bold;margin: 25px 0px;display: block;}div#quiz-app div.question div.question-text {margin: 25px auto;width: 75%;min-width: 350px;max-width: 500px;text-align: center;}div#quiz-app div.question div.question-container div.answer-grid {display: grid;grid-template-columns: repeat(3, 1fr);max-width: 500px;margin: 25px auto;}div#quiz-app div.question div.question-container div.answer-grid div {text-align: center;font-size: 1em;line-height: 1.75em;line-height: 1em;margin-bottom: 15px;}div#quiz-app div.question div.question-container div.answer-grid div div.answer-bubble {height: 50px;width: 50px;border-radius: 100%;cursor: pointer;border: solid medium #D8D8D8;margin: 0px auto;}div#quiz-app div.question div.question-container div.answer-grid div div.answer-bubble div.bubble-fill {height: 44px;width: 44px;margin: 3px 0px 0px 3px;background-color: #69CFAB;border-radius: 100%;}div#quiz-app div.question div.question-container div.answer-grid div div.answer-bubble:hover {opacity: 0.5;}div#quiz-app div.question div.question-container div.submit-btn {width: 75%;max-width: 500px;border-radius: 50px;background-color: #82848B;padding: 15px;text-align: center;color: #D8D8D8;margin: 0px auto;font-weight: bold;}div#quiz-app div.question div.question-container div.submit-btn:hover {opacity: 0.5;cursor: pointer;}div#quiz-app div.question div.answer-container {margin-top: 25px;display: none;text-align: center;}div#quiz-app div.question div.answer-container span {font-weight: normal;}div#quiz-app div.question div.answer-container span.answer-percent {display: inline-block;font-size: 2em;color: #69CFAB;font-family: 'Times New Roman', Times, serif;font-weight: 100;margin: 0px;}div#quiz-app div.question div.answer-container span.answer-text {display: inline-block;margin: 0px;}div#quiz-app div.question div.answer-container div.percent-bar {width: 75%;max-width: 500px;border-radius: 50px;border: solid thick #D8D8D8;margin: 35px auto 85px auto;overflow: hidden;height: 50px;}div#quiz-app div.question div.answer-container div.percent-bar div.percent-fill {background-color: #69CFAB;height: 50px;}div#quiz-app div.question div.answer-container div.percent-bar-title {width: 75%;text-align: left;margin: 25px auto 0px auto;max-width: 500px;}div#quiz-app div.question div.answer-container div.next-btn {width: 100%;background-color: #82848B;color: #D8D8D8;position: absolute;bottom: 0px;padding: 25px 0px;cursor: pointer;}div#quiz-app div.question div.answer-container div.next-btn:hover {opacity: 0.5;}@media only screen and (max-device-width: 480px) {div#quiz-app {width: 100%;padding: 100px 0px;box-sizing: border-box;height: 1100px;margin: 25px 0px;}div#quiz-app div.question img {width: 150px;height: 150px;}div#quiz-app div.question h2 {font-size: 3em;margin-top: 25px;}div#quiz-app div.question div.question-text {font-size: 2em;width: 90%;margin: 50px auto;max-width: none;text-align: center;}div#quiz-app div.question div.question-container div.answer-grid {font-size: 2em;max-width: none;}div#quiz-app div.question div.question-container div.answer-grid div div.answer-bubble {height: 100px;width: 100px;}div#quiz-app div.question div.question-container div.answer-grid div div.answer-bubble div.bubble-fill {height: 94px;width: 94px;}div#quiz-app div.question div.question-container div.submit-btn {font-size: 2em;width: 90%;max-width: none;margin-top: 50px;padding: 40px 0px;border-radius: 80px;}div#quiz-app div.question div.answer-container {font-size: 2em;}div#quiz-app div.question div.answer-container span.answer-text {font-size: 1em;}div#quiz-app div.question div.answer-container div.percent-bar {margin-top: 50px;}div#quiz-app div.question div.answer-container div.next-btn {font-size: 1em;}}</style>
+<link rel="stylesheet" href="https://www.deseretnews.com/v4/dist/app.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
+
+<div id="quiz-app">
+    <div class="question">
+        <img class="question-logo" alt="stone tablets logo">
+        <h2 class="question-title">loading...</h2>
+        <div class="question-text">loading...</div>
+        <div class="question-container">
+            <div class="answer-grid"></div>
+            <div class="submit-btn">SUBMIT</div>
+        </div>
+        <div class="answer-container">
+            You and 
+            <span class="answer-percent">0%</span> 
+            of participants <br />
+            nationwide answered "<span class="answer-text">n/a</span>".
+            <div class="percent-bar">
+                <div class="percent-fill"></div>
+            </div>
+            <div class="next-btn">Next &#65515;</div>
+        </div>
+    </div>
+</div>
+
+<script>/*
+ Developed by Jade Allen Cook 2018
+ Designed by Tamsin Himes 2018
+ Orginally Produced for Deseret News
+*/
+(function () {
+ var config = {
+ colors: {
+ background: '#3F424F',
+ loadingBar: '#69CFAB',
+ highlights: '#69CFAB'
+ },
+ title: 'Honesty: what counts?',
+ options: [{
+ html: 'Often<br />okay',
+ text: 'often okay'
+ }, {
+ html: 'Sometimes<br />okay',
+ text: 'often okay'
+ }, {
+ html: 'Never<br />okay',
+ text: 'never okay'
+ }],
+ logo: 'data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53%0D%0AMy5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5r%0D%0AIiB2aWV3Qm94PSIwIDAgMTYyLjc0IDE4Ni44NSI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOm5v%0D%0AbmU7fS5jbHMtMntjbGlwLXBhdGg6dXJsKCNjbGlwLXBhdGgpO30uY2xzLTN7ZmlsbDojZDhkOGQ4%0D%0AO30uY2xzLTR7Y2xpcC1wYXRoOnVybCgjY2xpcC1wYXRoLTIpO30uY2xzLTV7ZmlsbDojM2Y0MjUw%0D%0AO308L3N0eWxlPjxjbGlwUGF0aCBpZD0iY2xpcC1wYXRoIj48cG9seWdvbiBjbGFzcz0iY2xzLTEi%0D%0AIHBvaW50cz0iODEuMjUgMTg2Ljg1IDAgMTQwLjAzIDAuMTIgNDYuNiA4MS40OSAwIDE2Mi43NCA0%0D%0ANi44MSAxNjIuNjIgMTQwLjI0IDgxLjI1IDE4Ni44NSIvPjwvY2xpcFBhdGg+PGNsaXBQYXRoIGlk%0D%0APSJjbGlwLXBhdGgtMiI+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTMyLjYsNjkuMzF2NzUuMzRI%0D%0ANzUuMzRWMTI2LjU3SDMzLjE1VjUxLjIzYzAtMTEuNjUsMTIuODItMjEuMDksMjguNjMtMjEuMDks%0D%0AMTUuNTksMCwyOC4yNiw5LjE3LDI4LjYyLDIwLjU5QTM3LDM3LDAsMCwxLDEwNCw0OC4yMkMxMTku%0D%0ANzgsNDguMjIsMTMyLjYsNTcuNjYsMTMyLjYsNjkuMzFaIi8+PC9jbGlwUGF0aD48L2RlZnM+PHRp%0D%0AdGxlPnRoZV90ZW5fdG9kYXk8L3RpdGxlPjxnIGNsYXNzPSJjbHMtMiI+PHJlY3QgY2xhc3M9ImNs%0D%0Acy0zIiB4PSItMTUuMDciIHk9Ii0xNS4wNyIgd2lkdGg9IjE5Mi44NyIgaGVpZ2h0PSIyMTYuOTgi%0D%0ALz48L2c+PGcgY2xhc3M9ImNscy00Ij48cmVjdCBjbGFzcz0iY2xzLTUiIHg9IjE4LjA4IiB5PSIx%0D%0ANS4wNyIgd2lkdGg9IjEyOS41OSIgaGVpZ2h0PSIxNDQuNjUiLz48L2c+PC9zdmc+',
+ explore: {
+ active: true,
+ link: '#'
+ },
+ questions: {
+ data: 'https://raw.githubusercontent.com/jadeallencook/Quiz-Comparison/master/data/lies.json',
+ text: 'https://raw.githubusercontent.com/jadeallencook/Quiz-Comparison/master/data/lies-text.json'
+ }
+ }
+ var questions, questionsText;
+ var selectedAnswer, currentQuestion = 0;
+ function loadTitle() {
+ var elem = document.querySelector('h2.question-title');
+ elem.innerText = config.title;
+ }
+ function loadLogo() {
+ var elem = document.querySelector('img.question-logo');
+ elem.setAttribute('src', config.logo);
+ }
+ function changeBackgroundColor() {
+ var elem = document.querySelector('div#quiz-app');
+ if (config.colors.background) {
+ elem.style.backgroundColor = config.colors.background;
+ }
+ }
+ function initSetup() {
+ loadTitle();
+ loadLogo();
+ changeBackgroundColor();
+ loadQuestion();
+ }
+ function selectOption(selected) {
+ var optionElems = document.getElementsByClassName('answer-bubble');
+ for (var y = 0; y < optionElems.length; y++) {
+ optionElem = optionElems[y];
+ optionElem.innerHTML = null;
+ }
+ var fill = document.createElement('div');
+ fill.classList.add('bubble-fill');
+ if (config.colors.highlights) fill.style.backgroundColor = config.colors.highlights;
+ selected.appendChild(fill);
+ }
+ function loadOptions() {
+ selectedAnswer = null;
+ var elem = document.querySelector('div.answer-grid');
+ elem.innerHTML = null;
+ var options = config.options;
+ for (var x = 0; x < options.length; x++) {
+ var optionText = options[x];
+ var optionTextElem = document.createElement('div');
+ optionTextElem.innerHTML = optionText.html;
+ elem.appendChild(optionTextElem);
+ }
+ for (var x = 0; x < options.length; x++) {
+ var optionBubbleContainer = document.createElement('div');
+ var optionBubble = document.createElement('div');
+ optionBubble.classList.add('answer-bubble');
+ optionBubble.setAttribute('data-answer', (x + 1));
+ optionBubbleContainer.appendChild(optionBubble);
+ optionBubble.onclick = function () {
+ selectOption(this);
+ var answer = parseInt(this.getAttribute('data-answer'));
+ selectedAnswer = answer;
+ }
+ elem.appendChild(optionBubbleContainer);
+ }
+ }
+ function loadResults() {
+ document.querySelector('div.question-container').style.display = 'none';
+ document.querySelector('div.answer-container').style.display = 'block';
+ var answer = questions['question-' + (currentQuestion + 1) + '-' + selectedAnswer];
+ var percent = Math.round(answer.avg * 100) + '%';
+ var percentElem = document.querySelector('span.answer-percent');
+ percentElem.innerText = percent;
+ if (config.colors.highlights) percentElem.style.color = config.colors.highlights;
+ var percentBar = document.querySelector('div.percent-fill');
+ percentBar.style.width = percent;
+ if (config.colors.loadingBar) percentBar.style.backgroundColor = config.colors.loadingBar;
+ document.querySelector('span.answer-text').innerText = config.options[(selectedAnswer - 1)].text;
+ var nextBtn = document.querySelector('div.next-btn');
+ if ((currentQuestion + 1) < Object.keys(questionsText).length) {
+ nextBtn.onclick = function () {
+ currentQuestion++;
+ loadQuestion();
+ }
+ } else {
+ if (config.explore.active) {
+ nextBtn.innerHTML = 'Explore data &#65515;';
+ nextBtn.onclick = function () {
+ window.location = config.explore.link;
+ }
+ } else {
+ nextBtn.style.display = 'none';
+ }
+ }
+ }
+ function loadQuestion() {
+ document.querySelector('div.answer-container').style.display = 'none';
+ document.querySelector('div.question-container').style.display = 'block';
+ loadOptions();
+ var elem = document.querySelector('div.question-text');
+ elem.innerText = questionsText['question-' + (currentQuestion + 1)];
+ var submitElem = document.querySelector('div.submit-btn');
+ submitElem.onclick = function () {
+ if (selectedAnswer) loadResults();
+ }
+ }
+ Promise.all([new Promise(function (res, rej) {
+ var xhttp = new XMLHttpRequest();
+ xhttp.onreadystatechange = function (data) {
+ if (this.responseText) {
+ questions = JSON.parse(this.responseText);
+ res();
+ }
+ }
+ xhttp.open('get', config.questions.data, true);
+ xhttp.send();
+ }), new Promise(function (res, rej) {
+ var xhttp = new XMLHttpRequest();
+ xhttp.onreadystatechange = function (data) {
+ if (this.responseText) {
+ questionsText = JSON.parse(this.responseText);
+ res();
+ }
+ }
+ xhttp.open('get', config.questions.text, true);
+ xhttp.send();
+ })]).then(function () {
+ initSetup();
+ });
+})();</script>

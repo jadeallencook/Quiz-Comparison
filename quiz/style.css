@@ -1,7 +1,7 @@
 div#quiz-app {
-  width: 100%;
-  max-width: 750px;
-  margin: 25px auto;
+  width: 400px;
+  float: left;
+  margin: 15px 25px 15px 0px;
   background-color: #3F424F;
   padding: 25px 0px 25px 0px;
   position: relative;
@@ -15,18 +15,19 @@ div#quiz-app {
     div#quiz-app div.question h2 {
       font-family: 'Museo Slab';
       font-size: 1.5em;
-      font-weight: 900;
-      margin-top: 25px; }
+      font-weight: 700;
+      margin-top: 25px;
+      text-align: center; }
     div#quiz-app div.question span {
       font-weight: bold;
       margin: 25px 0px;
       display: block; }
     div#quiz-app div.question div.question-text {
-      font-weight: bold;
       margin: 25px auto;
       width: 75%;
       min-width: 350px;
-      max-width: 500px; }
+      max-width: 500px;
+    text-align: center;}
     div#quiz-app div.question div.question-container div.answer-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -34,9 +35,8 @@ div#quiz-app {
       margin: 25px auto; }
       div#quiz-app div.question div.question-container div.answer-grid div {
         text-align: center;
-        font-size: 1.5em;
+        font-size: 1em;
         line-height: 1.75em;
-        font-weight: bold;
         line-height: 1em;
         margin-bottom: 15px; }
         div#quiz-app div.question div.question-container div.answer-grid div div.answer-bubble {
@@ -68,9 +68,11 @@ div#quiz-app {
       opacity: 0.5;
       cursor: pointer; }
     div#quiz-app div.question div.answer-container {
-      font-weight: bold;
       margin-top: 25px;
-      display: none; }
+      display: none;
+      text-align: center; }
+      div#quiz-app div.question div.answer-container span {
+        font-weight: normal; }
       div#quiz-app div.question div.answer-container span.answer-percent {
         display: inline-block;
         font-size: 2em;
@@ -110,10 +112,11 @@ div#quiz-app {
 
 @media only screen and (max-device-width: 480px) {
   div#quiz-app {
-    max-width: none;
+    width: 100%;
     padding: 100px 0px;
     box-sizing: border-box;
-    height: 1100px; }
+    height: 1100px;
+    margin: 25px 0px; }
     div#quiz-app div.question img {
       width: 150px;
       height: 150px; }
@@ -124,7 +127,8 @@ div#quiz-app {
       font-size: 2em;
       width: 90%;
       margin: 50px auto;
-      max-width: none; }
+      max-width: none;
+      text-align: center; }
     div#quiz-app div.question div.question-container div.answer-grid {
       font-size: 2em;
       max-width: none; }
@@ -144,10 +148,10 @@ div#quiz-app {
     div#quiz-app div.question div.answer-container {
       font-size: 2em; }
       div#quiz-app div.question div.answer-container span.answer-text {
-        font-size: 1.25em; }
+        font-size: 1em; }
       div#quiz-app div.question div.answer-container div.percent-bar {
         margin-top: 50px; }
       div#quiz-app div.question div.answer-container div.next-btn {
-        font-size: 1.5em; } }
+        font-size: 1em; } }
 
 /*# sourceMappingURL=style.css.map */
