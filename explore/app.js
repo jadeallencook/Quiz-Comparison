@@ -144,9 +144,11 @@
             var blankElem = document.createElement('div');
             var nameElem = document.createElement('div');
             nameElem.innerText = sub.text;
+            nameElem.classList.add('label-text');
             var topBlankElem = document.createElement('div');
             var overallElem = document.createElement('div');
             overallElem.innerText = 'Overall Population';
+            overallElem.classList.add('label-text');
             entry.insertBefore(overallElem, entry.firstChild);
             entry.insertBefore(topBlankElem, entry.firstChild);
             entry.appendChild(blankElem);
