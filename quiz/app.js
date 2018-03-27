@@ -138,7 +138,6 @@
         var submitElem = document.querySelector('div.submit-btn');
         submitElem.onclick = function () {
             if ('ga' in window) ga('send', 'event', '10 Commandments Quiz', questionsText['question' + (currentQuestion + 1)], selectedAnswer);
-            console.log(selectedAnswer);
             if (selectedAnswer) loadResults();
         }
     }
