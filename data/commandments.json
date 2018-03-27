@@ -11,7 +11,17 @@
         "boomer": 0.68,
         "silent": 0.72,
         "male": 0.56,
-        "female": 0.62
+        "female": 0.62,
+        "m-prot": 0.63,
+        "e-prot": 0.94,
+        "b-prot": 0.8,
+        "cath": 0.76,
+        "ortho": 0.44,
+        "conserve": 0.64,
+        "liberal": 0,
+        "jew": 0.37,
+        "other": 0.41,
+        "unafill": 0.28
     },
     "question-1-2": {
         "avg": 0.3,
@@ -25,7 +35,17 @@
         "boomer": 0.22,
         "silent": 0.23,
         "male": 0.33,
-        "female": 0.27
+        "female": 0.27,
+        "m-prot": 0.27,
+        "e-prot": 0.04,
+        "b-prot": 0.06,
+        "cath": 0.13,
+        "ortho": 0.5,
+        "conserve": 0,
+        "liberal": 1,
+        "jew": 0.63,
+        "other": 0.41,
+        "unafill": 0.56
     },
     "question-1-3": {
         "avg": 0.11,
@@ -39,7 +59,17 @@
         "boomer": 0.09,
         "silent": 0.05,
         "male": 0.11,
-        "female": 0.11
+        "female": 0.11,
+        "m-prot": 0.1,
+        "e-prot": 0.02,
+        "b-prot": 0.13,
+        "cath": 0.11,
+        "ortho": 0.06,
+        "conserve": 0.36,
+        "liberal": 0,
+        "jew": 0,
+        "other": 0.18,
+        "unafill": 0.16
     },
     "question-2-1": {
         "avg": 0.63,
@@ -53,7 +83,17 @@
         "boomer": 0.73,
         "silent": 0.78,
         "male": 0.62,
-        "female": 0.65
+        "female": 0.65,
+        "m-prot": 0.71,
+        "e-prot": 0.94,
+        "b-prot": 0.86,
+        "cath": 0.68,
+        "ortho": 0.88,
+        "conserve": 0.85,
+        "liberal": 0,
+        "jew": 0.56,
+        "other": 0.47,
+        "unafill": 0.4
     },
     "question-2-2": {
         "avg": 0.26,
@@ -67,7 +107,17 @@
         "boomer": 0.18,
         "silent": 0.17,
         "male": 0.29,
-        "female": 0.23
+        "female": 0.23,
+        "m-prot": 0.23,
+        "e-prot": 0.02,
+        "b-prot": 0.04,
+        "cath": 0.18,
+        "ortho": 0.06,
+        "conserve": 0.15,
+        "liberal": 0.33,
+        "jew": 0.37,
+        "other": 0.45,
+        "unafill": 0.46
     },
     "question-2-3": {
         "avg": 0.11,
@@ -81,7 +131,17 @@
         "boomer": 0.09,
         "silent": 0.05,
         "male": 0.09,
-        "female": 0.12
+        "female": 0.12,
+        "m-prot": 0.07,
+        "e-prot": 0.04,
+        "b-prot": 0.1,
+        "cath": 0.14,
+        "ortho": 0.06,
+        "conserve": 0,
+        "liberal": 0.67,
+        "jew": 0.07,
+        "other": 0.08,
+        "unafill": 0.14
     },
     "question-3-1": {
         "avg": 0.59,
@@ -95,7 +155,17 @@
         "boomer": 0.68,
         "silent": 0.69,
         "male": 0.55,
-        "female": 0.62
+        "female": 0.62,
+        "m-prot": 0.63,
+        "e-prot": 0.94,
+        "b-prot": 0.87,
+        "cath": 0.71,
+        "ortho": 0.36,
+        "conserve": 1,
+        "liberal": 0,
+        "jew": 0.26,
+        "other": 0.43,
+        "unafill": 0.29
     },
     "question-3-2": {
         "avg": 0.33,
@@ -109,7 +179,17 @@
         "boomer": 0.25,
         "silent": 0.3,
         "male": 0.36,
-        "female": 0.3
+        "female": 0.3,
+        "m-prot": 0.3,
+        "e-prot": 0.04,
+        "b-prot": 0.07,
+        "cath": 0.22,
+        "ortho": 0.5,
+        "conserve": 0,
+        "liberal": 1,
+        "jew": 0.74,
+        "other": 0.46,
+        "unafill": 0.57
     },
     "question-3-3": {
         "avg": 0.08,
@@ -123,7 +203,17 @@
         "boomer": 0.07,
         "silent": 0.01,
         "male": 0.09,
-        "female": 0.08
+        "female": 0.08,
+        "m-prot": 0.07,
+        "e-prot": 0.03,
+        "b-prot": 0.06,
+        "cath": 0.08,
+        "ortho": 0.13,
+        "conserve": 0,
+        "liberal": 0,
+        "jew": 0,
+        "other": 0.12,
+        "unafill": 0.13
     },
     "question-4-1": {
         "avg": 0.49,
@@ -137,7 +227,17 @@
         "boomer": 0.53,
         "silent": 0.67,
         "male": 0.48,
-        "female": 0.51
+        "female": 0.51,
+        "m-prot": 0.54,
+        "e-prot": 0.84,
+        "b-prot": 0.85,
+        "cath": 0.59,
+        "ortho": 0.21,
+        "conserve": 0.19,
+        "liberal": 0,
+        "jew": 0.37,
+        "other": 0.38,
+        "unafill": 0.2
     },
     "question-4-2": {
         "avg": 0.37,
@@ -151,7 +251,17 @@
         "boomer": 0.34,
         "silent": 0.29,
         "male": 0.4,
-        "female": 0.35
+        "female": 0.35,
+        "m-prot": 0.35,
+        "e-prot": 0.1,
+        "b-prot": 0.04,
+        "cath": 0.3,
+        "ortho": 0.5,
+        "conserve": 0.6,
+        "liberal": 0.71,
+        "jew": 0.63,
+        "other": 0.37,
+        "unafill": 0.62
     },
     "question-4-3": {
         "avg": 0.13,
@@ -165,7 +275,17 @@
         "boomer": 0.13,
         "silent": 0.04,
         "male": 0.12,
-        "female": 0.14
+        "female": 0.14,
+        "m-prot": 0.11,
+        "e-prot": 0.06,
+        "b-prot": 0.11,
+        "cath": 0.12,
+        "ortho": 0.29,
+        "conserve": 0.21,
+        "liberal": 0.29,
+        "jew": 0,
+        "other": 0.25,
+        "unafill": 0.17
     },
     "question-5-1": {
         "avg": 0.85,
@@ -179,7 +299,17 @@
         "boomer": 0.89,
         "silent": 0.92,
         "male": 0.84,
-        "female": 0.86
+        "female": 0.86,
+        "m-prot": 0.92,
+        "e-prot": 0.97,
+        "b-prot": 0.89,
+        "cath": 0.9,
+        "ortho": 0.44,
+        "conserve": 1,
+        "liberal": 0.51,
+        "jew": 0.73,
+        "other": 0.81,
+        "unafill": 0.74
     },
     "question-5-2": {
         "avg": 0.1,
@@ -193,7 +323,17 @@
         "boomer": 0.07,
         "silent": 0.05,
         "male": 0.11,
-        "female": 0.08
+        "female": 0.08,
+        "m-prot": 0.02,
+        "e-prot": 0.02,
+        "b-prot": 0.08,
+        "cath": 0.07,
+        "ortho": 0.56,
+        "conserve": 0,
+        "liberal": 0.49,
+        "jew": 0.23,
+        "other": 0.14,
+        "unafill": 0.15
     },
     "question-5-3": {
         "avg": 0.06,
@@ -207,7 +347,17 @@
         "boomer": 0.05,
         "silent": 0.03,
         "male": 0.05,
-        "female": 0.07
+        "female": 0.07,
+        "m-prot": 0.06,
+        "e-prot": 0.01,
+        "b-prot": 0.03,
+        "cath": 0.03,
+        "ortho": 0,
+        "conserve": 0,
+        "liberal": 0,
+        "jew": 0.04,
+        "other": 0.05,
+        "unafill": 0.11
     },
     "question-6-1": {
         "avg": 0.94,
@@ -221,7 +371,17 @@
         "boomer": 0.95,
         "silent": 1,
         "male": 0.91,
-        "female": 0.96
+        "female": 0.96,
+        "m-prot": 0.97,
+        "e-prot": 0.99,
+        "b-prot": 0.94,
+        "cath": 0.94,
+        "ortho": 0.5,
+        "conserve": 1,
+        "liberal": 1,
+        "jew": 0.93,
+        "other": 0.86,
+        "unafill": 0.91
     },
     "question-6-2": {
         "avg": 0.03,
@@ -235,7 +395,17 @@
         "boomer": 0.02,
         "silent": 0.01,
         "male": 0.04,
-        "female": 0.01
+        "female": 0.01,
+        "m-prot": 0.03,
+        "e-prot": 0,
+        "b-prot": 0.01,
+        "cath": 0.04,
+        "ortho": 0,
+        "conserve": 0,
+        "liberal": 0,
+        "jew": 0.07,
+        "other": 0.05,
+        "unafill": 0.04
     },
     "question-6-3": {
         "avg": 0.04,
@@ -249,7 +419,17 @@
         "boomer": 0.03,
         "silent": 0.01,
         "male": 0.05,
-        "female": 0.03
+        "female": 0.03,
+        "m-prot": 0.01,
+        "e-prot": 0.01,
+        "b-prot": 0.05,
+        "cath": 0.02,
+        "ortho": 0.5,
+        "conserve": 0,
+        "liberal": 0,
+        "jew": 0,
+        "other": 0.09,
+        "unafill": 0.05
     },
     "question-7-1": {
         "avg": 0.83,
@@ -263,7 +443,17 @@
         "boomer": 0.85,
         "silent": 0.9,
         "male": 0.78,
-        "female": 0.88
+        "female": 0.88,
+        "m-prot": 0.9,
+        "e-prot": 0.94,
+        "b-prot": 0.85,
+        "cath": 0.86,
+        "ortho": 0.5,
+        "conserve": 0.85,
+        "liberal": 0.71,
+        "jew": 0.85,
+        "other": 0.84,
+        "unafill": 0.74
     },
     "question-7-2": {
         "avg": 0.1,
@@ -277,7 +467,17 @@
         "boomer": 0.11,
         "silent": 0.05,
         "male": 0.14,
-        "female": 0.06
+        "female": 0.06,
+        "m-prot": 0.06,
+        "e-prot": 0.03,
+        "b-prot": 0.08,
+        "cath": 0.1,
+        "ortho": 0.5,
+        "conserve": 0.15,
+        "liberal": 0.29,
+        "jew": 0.15,
+        "other": 0.05,
+        "unafill": 0.16
     },
     "question-7-3": {
         "avg": 0.06,
@@ -291,7 +491,17 @@
         "boomer": 0.05,
         "silent": 0.04,
         "male": 0.07,
-        "female": 0.05
+        "female": 0.05,
+        "m-prot": 0.03,
+        "e-prot": 0.02,
+        "b-prot": 0.07,
+        "cath": 0.05,
+        "ortho": 0,
+        "conserve": 0,
+        "liberal": 0,
+        "jew": 0,
+        "other": 0.11,
+        "unafill": 0.1
     },
     "question-8-1": {
         "avg": 0.94,
@@ -305,7 +515,17 @@
         "boomer": 0.96,
         "silent": 0.97,
         "male": 0.91,
-        "female": 0.96
+        "female": 0.96,
+        "m-prot": 0.97,
+        "e-prot": 0.99,
+        "b-prot": 0.94,
+        "cath": 0.95,
+        "ortho": 0.5,
+        "conserve": 1,
+        "liberal": 1,
+        "jew": 0.91,
+        "other": 0.9,
+        "unafill": 0.9
     },
     "question-8-2": {
         "avg": 0.04,
@@ -319,7 +539,17 @@
         "boomer": 0.03,
         "silent": 0.03,
         "male": 0.05,
-        "female": 0.02
+        "female": 0.02,
+        "m-prot": 0.02,
+        "e-prot": 0,
+        "b-prot": 0.05,
+        "cath": 0.02,
+        "ortho": 0.44,
+        "conserve": 0,
+        "liberal": 0,
+        "jew": 0.06,
+        "other": 0.07,
+        "unafill": 0.05
     },
     "question-8-3": {
         "avg": 0.03,
@@ -333,7 +563,17 @@
         "boomer": 0.01,
         "silent": 0.01,
         "male": 0.04,
-        "female": 0.02
+        "female": 0.02,
+        "m-prot": 0.01,
+        "e-prot": 0.01,
+        "b-prot": 0.01,
+        "cath": 0.03,
+        "ortho": 0.06,
+        "conserve": 0,
+        "liberal": 0,
+        "jew": 0.03,
+        "other": 0.03,
+        "unafill": 0.05
     },
     "question-9-1": {
         "avg": 0.91,
@@ -347,7 +587,17 @@
         "boomer": 0.95,
         "silent": 0.97,
         "male": 0.89,
-        "female": 0.92
+        "female": 0.92,
+        "m-prot": 0.96,
+        "e-prot": 0.99,
+        "b-prot": 0.94,
+        "cath": 0.88,
+        "ortho": 1,
+        "conserve": 1,
+        "liberal": 1,
+        "jew": 0.81,
+        "other": 0.94,
+        "unafill": 0.85
     },
     "question-9-2": {
         "avg": 0.05,
@@ -361,7 +611,17 @@
         "boomer": 0.04,
         "silent": 0.03,
         "male": 0.06,
-        "female": 0.04
+        "female": 0.04,
+        "m-prot": 0.03,
+        "e-prot": 0,
+        "b-prot": 0.03,
+        "cath": 0.07,
+        "ortho": 0,
+        "conserve": 0,
+        "liberal": 0,
+        "jew": 0.15,
+        "other": 0.03,
+        "unafill": 0.07
     },
     "question-9-3": {
         "avg": 0.04,
@@ -375,7 +635,17 @@
         "boomer": 0.01,
         "silent": 0.01,
         "male": 0.04,
-        "female": 0.04
+        "female": 0.04,
+        "m-prot": 0.01,
+        "e-prot": 0.01,
+        "b-prot": 0.03,
+        "cath": 0.04,
+        "ortho": 0,
+        "conserve": 0,
+        "liberal": 0,
+        "jew": 0.04,
+        "other": 0.03,
+        "unafill": 0.07
     },
     "question-10-1": {
         "avg": 0.78,
@@ -389,7 +659,17 @@
         "boomer": 0.83,
         "silent": 0.89,
         "male": 0.72,
-        "female": 0.83
+        "female": 0.83,
+        "m-prot": 0.84,
+        "e-prot": 0.94,
+        "b-prot": 0.92,
+        "cath": 0.85,
+        "ortho": 0.5,
+        "conserve": 0.85,
+        "liberal": 0.67,
+        "jew": 0.65,
+        "other": 0.73,
+        "unafill": 0.62
     },
     "question-10-2": {
         "avg": 0.13,
@@ -403,7 +683,17 @@
         "boomer": 0.11,
         "silent": 0.05,
         "male": 0.17,
-        "female": 0.09
+        "female": 0.09,
+        "m-prot": 0.11,
+        "e-prot": 0.02,
+        "b-prot": 0.01,
+        "cath": 0.1,
+        "ortho": 0,
+        "conserve": 0.15,
+        "liberal": 0.33,
+        "jew": 0.24,
+        "other": 0.15,
+        "unafill": 0.23
     },
     "question-10-3": {
         "avg": 0.09,
@@ -417,6 +707,16 @@
         "boomer": 0.06,
         "silent": 0.06,
         "male": 0.11,
-        "female": 0.08
+        "female": 0.08,
+        "m-prot": 0.04,
+        "e-prot": 0.04,
+        "b-prot": 0.07,
+        "cath": 0.06,
+        "ortho": 0.5,
+        "conserve": 0,
+        "liberal": 0,
+        "jew": 0.1,
+        "other": 0.12,
+        "unafill": 0.16
     }
 }

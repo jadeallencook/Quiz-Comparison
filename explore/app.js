@@ -1,18 +1,39 @@
-(function() {
-    function answer() {
-        // reset answers
-        document.getElementsByClassName('answer-bubble')[0].innerHTML = '';
-        document.getElementsByClassName('answer-bubble')[1].innerHTML = '';
-        document.getElementsByClassName('answer-bubble')[2].innerHTML = '';
-        // create fill element
-        var fill = document.createElement('div');
-        fill.classList.add('bubble-fill');
-        fill.classList.add('animated');
-        fill.classList.add('fadeIn');
-        this.appendChild(fill);
+(function () {
+
+    var config = {
+        categories: [{
+            group: 'Religion',
+            sub: [{
+                text: 'Mormon',
+                slug: 'mormon'
+            }, {
+                text: 'Catholic',
+                slug: 'catholic'
+            }, {
+                text: 'Protistant',
+                slug: 'protistant'
+            }, {
+                text: 'None',
+                slug: 'none'
+            }]
+        }, {
+            group: 'Age',
+            sub: [{
+                text: '18 - 29',
+                slug: '18-29'
+            }]
+        }, {
+            group: 'Gender',
+            sub: [{
+                text: 'Male',
+                slug: 'male'
+            }, {
+                text: 'Female',
+                slug: 'female'
+            }]
+        }]
     }
-    // add answer functionality to buttons
-    document.getElementsByClassName('answer-bubble')[0].onclick = answer;
-    document.getElementsByClassName('answer-bubble')[1].onclick = answer;
-    document.getElementsByClassName('answer-bubble')[2].onclick = answer;
+
+    
+
 })();
