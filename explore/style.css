@@ -82,7 +82,7 @@ div#quiz-comparison-app {
     width: 75%;
     margin: 0px auto;
     border-bottom: solid thick #82848B;
-    padding: 15px 0px; }
+    padding: 50px 0px 50px 0px; }
     div#quiz-comparison-app div.question div.text-grid {
       display: grid;
       grid-template-columns: 10% 90%; }
