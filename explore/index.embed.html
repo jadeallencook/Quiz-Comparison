@@ -1,0 +1,247 @@
+<style>div#quiz-comparison-app {width: 100%;max-width: 750px;margin: 25px auto;background-color: #3F424F;padding: 25px 0px 25px 0px;color: #D8D8D8;text-align: center;}div#quiz-comparison-app img.logo {width: 50px;margin: 0px auto;display: block;}div#quiz-comparison-app h2.question-title {font-family: 'Museo Slab';font-size: 1.5em;font-weight: 900;}div#quiz-comparison-app div.intro-text {font-weight: bold;margin: 25px auto;border-top: solid medium #D8D8D8;border-bottom: solid medium #D8D8D8;width: 75%;padding: 15px 0px;}div#quiz-comparison-app div.info-text {margin: 0px auto;width: 75%;}div#quiz-comparison-app div.filters-container {background-color: #82848B;padding: 15px 0px;margin: 25px 0px;}div#quiz-comparison-app div.filters-container div.dropdown {border: solid thin #D8D8D8;display: block;text-align: left;margin: 15px auto;width: 350px;padding: 5px 15px;position: relative;cursor: pointer;}div#quiz-comparison-app div.filters-container div.dropdown span.arrow {float: right;}div#quiz-comparison-app div.filters-container div.dropdown ul {position: absolute;width: 382px;list-style: none;margin-left: -16px;margin-top: 5px;display: none;padding-left: 0px;}div#quiz-comparison-app div.filters-container div.dropdown ul li {background-color: #D8D8D8;color: #82848B;width: 100%;box-sizing: border-box;padding: 5px 15px;}div#quiz-comparison-app div.filters-container div.dropdown ul li:before {content: none;}div#quiz-comparison-app div.filters-container div.dropdown ul li:hover {background-color: #666;color: #D8D8D8;}div#quiz-comparison-app div.filters-container div.clear-btn {background-color: #D8D8D8;color: #82848B;padding: 5px 15px;width: 350px;margin: 0px auto;cursor: pointer;}div#quiz-comparison-app div.filters-container div.clear-btn:hover {opacity: 0.5;}div#quiz-comparison-app div.filters-container div#sub-category {display: none;}div#quiz-comparison-app div.filters-container div.btn-container {display: block;text-align: center;}div#quiz-comparison-app div.filters-container div.btn-container div {background-color: #D8D8D8;color: #3F424F;display: inline-block;padding: 5px 15px;width: 150px;cursor: pointer;font-weight: bold;margin: 5px;}div#quiz-comparison-app div.filters-container div.btn-container div:hover {opacity: 0.5;}div#quiz-comparison-app div.question {width: 75%;margin: 0px auto;border-bottom: solid thick #82848B;padding: 50px 0px 50px 0px;}div#quiz-comparison-app div.question div.text-grid {display: grid;grid-template-columns: 10% 90%;}div#quiz-comparison-app div.question div.text-grid div {text-align: left;}div#quiz-comparison-app div.question div.text-grid div.num {font-family: 'Times New Roman';font-size: 1.5em;}div#quiz-comparison-app div.question div.bar-grid {display: grid;grid-template-columns: 20% 80%;margin-top: 25px;}div#quiz-comparison-app div.question div.bar-grid div {text-align: center;}div#quiz-comparison-app div.question div.bar-grid div.label-text {line-height: 10px;padding-top: 30px;}div#quiz-comparison-app div.question div.bar-grid div.percent {font-family: 'Times New Roman', Times, serif;font-size: 2em;text-align: left;}div#quiz-comparison-app div.question div.bar-grid div.bar-container {width: 95%;border: solid medium #D8D8D8;height: 25px;border-radius: 25px;margin: 10px 0px 0px 15px;overflow: hidden;}div#quiz-comparison-app div.question div.bar-grid div.bar-container div.bar-fill {background-color: #69CFAB;height: 100%;}@media only screen and (max-device-width: 480px) {div#quiz-comparison-app {padding: 50px 0px;max-width: none;font-size: 1em;}div#quiz-comparison-app img.logo {width: 75px;height: 75px;margin-bottom: 25px;}div#quiz-comparison-app h2.question-title {font-size: 2em;}div#quiz-comparison-app div.filters-container div.dropdown {width: 250px;padding: 10px 25px;}div#quiz-comparison-app div.filters-container div.dropdown ul {width: 502px;margin-left: -26px;margin-top: 11px;}div#quiz-comparison-app div.filters-container div.dropdown ul li {width: 302px;}div#quiz-comparison-app div.filters-container div.clear-btn {width: 275px;margin-bottom: 25px;}div#quiz-comparison-app div.question div.text-grid {grid-template-columns: 30% 70%;}div#quiz-comparison-app div.question div.bar-grid {grid-template-columns: 30% 70%;}div#quiz-comparison-app div.question div.bar-grid div.bar-container {margin: 30px 0px 0px 15px;}div#quiz-comparison-app div.question div.bar-grid div.label-text {line-height: 0px;padding-top: 30px;}}</style>
+
+<div id="quiz-comparison-app">
+    <img class="logo" src="data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53%0D%0AMy5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5r%0D%0AIiB2aWV3Qm94PSIwIDAgMTYyLjc0IDE4Ni44NSI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOm5v%0D%0AbmU7fS5jbHMtMntjbGlwLXBhdGg6dXJsKCNjbGlwLXBhdGgpO30uY2xzLTN7ZmlsbDojZDhkOGQ4%0D%0AO30uY2xzLTR7Y2xpcC1wYXRoOnVybCgjY2xpcC1wYXRoLTIpO30uY2xzLTV7ZmlsbDojM2Y0MjUw%0D%0AO308L3N0eWxlPjxjbGlwUGF0aCBpZD0iY2xpcC1wYXRoIj48cG9seWdvbiBjbGFzcz0iY2xzLTEi%0D%0AIHBvaW50cz0iODEuMjUgMTg2Ljg1IDAgMTQwLjAzIDAuMTIgNDYuNiA4MS40OSAwIDE2Mi43NCA0%0D%0ANi44MSAxNjIuNjIgMTQwLjI0IDgxLjI1IDE4Ni44NSIvPjwvY2xpcFBhdGg+PGNsaXBQYXRoIGlk%0D%0APSJjbGlwLXBhdGgtMiI+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTMyLjYsNjkuMzF2NzUuMzRI%0D%0ANzUuMzRWMTI2LjU3SDMzLjE1VjUxLjIzYzAtMTEuNjUsMTIuODItMjEuMDksMjguNjMtMjEuMDks%0D%0AMTUuNTksMCwyOC4yNiw5LjE3LDI4LjYyLDIwLjU5QTM3LDM3LDAsMCwxLDEwNCw0OC4yMkMxMTku%0D%0ANzgsNDguMjIsMTMyLjYsNTcuNjYsMTMyLjYsNjkuMzFaIi8+PC9jbGlwUGF0aD48L2RlZnM+PHRp%0D%0AdGxlPnRoZV90ZW5fdG9kYXk8L3RpdGxlPjxnIGNsYXNzPSJjbHMtMiI+PHJlY3QgY2xhc3M9ImNs%0D%0Acy0zIiB4PSItMTUuMDciIHk9Ii0xNS4wNyIgd2lkdGg9IjE5Mi44NyIgaGVpZ2h0PSIyMTYuOTgi%0D%0ALz48L2c+PGcgY2xhc3M9ImNscy00Ij48cmVjdCBjbGFzcz0iY2xzLTUiIHg9IjE4LjA4IiB5PSIx%0D%0ANS4wNyIgd2lkdGg9IjEyOS41OSIgaGVpZ2h0PSIxNDQuNjUiLz48L2c+PC9zdmc+" alt="stone tablets logo">
+    <h2 class="question-title">The Ten Today</h2>
+    <div class="intro-text">Etiam porta sem malesuada magna mollis euismod. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit
+        amet fermentum. Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</div>
+    <div class="info-text">Cras justo odio, sed posuere consectetur est at lobortis donec sed odio dui dapibus ac facilisis in egestas eget quam.</div>
+    <div class="filters-container">
+        <span>Want to explore the data?</span>
+        <div class="dropdown" id="category">
+            <span class="text">Choose a category</span>
+            <span class="arrow">&#x25BC;</span>
+            <ul></ul>
+        </div>
+        <div class="dropdown" id="sub-category">
+            <span class="text">Choose a section</span>
+            <span class="arrow">&#x25BC;</span>
+            <ul></ul>
+        </div>
+    </div>
+</div>
+
+<script>(function () {
+ var config = {
+ categories: [{
+ group: 'Religion',
+ sub: [{
+ text: 'Mainline Protestant',
+ slug: 'm-prot'
+ }, {
+ text: 'Evangelical Protestant',
+ slug: 'e-prot'
+ }, {
+ text: 'Black Protestant',
+ slug: 'b-prot'
+ }, {
+ text: 'Catholic',
+ slug: 'cath'
+ }, {
+ text: 'Orthodox',
+ slug: 'ortho'
+ }, {
+ text: 'Conservative Non-Traditional',
+ slug: 'conserve'
+ }, {
+ text: 'Liberal Non-Traditional',
+ slug: 'liberal'
+ }, {
+ text: 'Jewish',
+ slug: 'jew'
+ }, {
+ text: 'Other',
+ slug: 'other'
+ }, {
+ text: 'Unafilliated',
+ slug: 'unafill'
+ }]
+ }, {
+ group: 'Age',
+ sub: [{
+ text: '18 - 29',
+ slug: '18-29'
+ }, {
+ text: '30 - 44',
+ slug: '30-44'
+ }, {
+ text: '45 - 64',
+ slug: '45-64'
+ }, {
+ text: '65+',
+ slug: '65+'
+ }]
+ }, {
+ group: 'Gender',
+ sub: [{
+ text: 'Male',
+ slug: 'male'
+ }, {
+ text: 'Female',
+ slug: 'female'
+ }]
+ }],
+ json: {
+ data: 'https://raw.githubusercontent.com/jadeallencook/Quiz-Comparison/master/data/commandments.json',
+ text: 'https://raw.githubusercontent.com/jadeallencook/Quiz-Comparison/master/data/commandments-text.json'
+ }
+ }
+ var questions, questionsText;
+ function categories() {
+ var categories = config.categories;
+ var categoryList = document.querySelector('div#category ul');
+ var subCategoryList = document.querySelector('div#sub-category ul');
+ for (var x = 0; x < categories.length; x++) {
+ var category = categories[x];
+ var listElem = document.createElement('li');
+ listElem.innerText = category.group;
+ listElem.setAttribute('data-category', x);
+ listElem.onclick = function () {
+ var num = parseInt(this.getAttribute('data-category'));
+ document.querySelector('div#sub-category').style.display = 'block';
+ document.querySelector('div#sub-category ul').innerHTML = null;
+ document.querySelector('div#category').innerHTML = categories[num].group + '<ul></ul>';
+ for (var y = 0; y < categories[num].sub.length; y++) {
+ var sub = categories[num].sub[y];
+ var subElem = document.createElement('li');
+ subElem.innerText = sub.text;
+ subElem.setAttribute('data-key', sub.slug);
+ subElem.setAttribute('data-num', y);
+ subElem.onclick = function () {
+ var choosenSub = categories[num].sub[parseInt(this.getAttribute('data-num'))];
+ document.querySelector('div#sub-category').innerHTML = choosenSub.text + '<ul></ul>';
+ compare(choosenSub);
+ var clearElem = document.createElement('div');
+ clearElem.innerText = 'Reset';
+ clearElem.classList.add('clear-btn');
+ document.querySelector('div.filters-container').appendChild(clearElem);
+ clearElem.onclick = function() {
+ document.getElementById('category').innerHTML = '<span class="text">Choose a category</span>';
+ document.getElementById('category').innerHTML += '<span class="arrow">&#x25BC;</span>';
+ document.getElementById('category').innerHTML += '<ul></ul>';
+ document.getElementById('sub-category').innerHTML = '<span class="text">Choose a section</span>';
+ document.getElementById('sub-category').innerHTML += '<span class="arrow">&#x25BC;</span>';
+ document.getElementById('sub-category').innerHTML += '<ul></ul>';
+ document.getElementById('sub-category').style.display = 'none';
+ clearElem.remove();
+ init();
+ }
+ }
+ document.querySelector('div#sub-category ul').appendChild(subElem);
+ }
+ document.querySelector('div#sub-category').onclick = function () {
+ if (!subCategoryList.style.display || subCategoryList.style.display === 'none') {
+ subCategoryList.style.display = 'block';
+ } else {
+ subCategoryList.style.display = 'none';
+ }
+ }
+ }
+ categoryList.appendChild(listElem);
+ }
+ document.querySelector('div#category').onclick = function () {
+ if (!categoryList.style.display || categoryList.style.display === 'none') {
+ categoryList.style.display = 'block';
+ } else {
+ categoryList.style.display = 'none';
+ }
+ }
+ }
+ function compare(sub) {
+ for (var x = 0; x < Object.keys(questionsText).length; x++) {
+ var entry = document.getElementsByClassName('bar-grid')[x];
+ var percentElem = document.createElement('div');
+ percentElem.classList.add('percent');
+ var percent = Math.round(questions['question-' + (x + 1) + '-1'][sub.slug] * 100) + '%';
+ percentElem.innerText = percent;
+ var barContainerElem = document.createElement('div');
+ barContainerElem.classList.add('bar-container');
+ var barFillElem = document.createElement('div');
+ barFillElem.classList.add('bar-fill');
+ barFillElem.style.width = percent;
+ barContainerElem.appendChild(barFillElem);
+ var blankElem = document.createElement('div');
+ var nameElem = document.createElement('div');
+ nameElem.innerText = sub.text;
+ nameElem.classList.add('label-text');
+ var topBlankElem = document.createElement('div');
+ var overallElem = document.createElement('div');
+ overallElem.innerText = 'Overall Population';
+ overallElem.classList.add('label-text');
+ entry.insertBefore(overallElem, entry.firstChild);
+ entry.insertBefore(topBlankElem, entry.firstChild);
+ entry.appendChild(blankElem);
+ entry.appendChild(nameElem);
+ entry.appendChild(percentElem);
+ entry.appendChild(barContainerElem);
+ }
+ }
+ function clear() {
+ if (document.getElementsByClassName('question').length) {
+ do {
+ if (document.getElementsByClassName('question')[0]) {
+ document.getElementsByClassName('question')[0].remove();
+ }
+ } while (document.getElementsByClassName('question').length > 0);
+ }
+ }
+ function average() {
+ clear();
+ for (var x = 0; x < Object.keys(questionsText).length; x++) {
+ var questionElem = document.createElement('div');
+ questionElem.classList.add('question');
+ var textGridElem = document.createElement('div');
+ textGridElem.classList.add('text-grid');
+ var numElem = document.createElement('div');
+ numElem.classList.add('num');
+ numElem.innerText = (x + 1) + '.';
+ var textElem = document.createElement('div');
+ textElem.classList.add('text');
+ textElem.innerText = questionsText['question-' + (x + 1)];
+ textGridElem.appendChild(numElem);
+ textGridElem.appendChild(textElem);
+ var barGridElem = document.createElement('div');
+ barGridElem.classList.add('bar-grid');
+ var percentElem = document.createElement('div');
+ percentElem.classList.add('percent');
+ var percent = Math.round(questions['question-' + (x + 1) + '-1'].avg * 100) + '%';
+ percentElem.innerText = percent;
+ var barContainerElem = document.createElement('div');
+ barContainerElem.classList.add('bar-container');
+ var barFillElem = document.createElement('div');
+ barFillElem.classList.add('bar-fill');
+ barFillElem.style.width = percent;
+ barContainerElem.appendChild(barFillElem);
+ barGridElem.appendChild(percentElem);
+ barGridElem.appendChild(barContainerElem);
+ questionElem.appendChild(textGridElem);
+ questionElem.appendChild(barGridElem);
+ document.getElementById('quiz-comparison-app').appendChild(questionElem);
+ }
+ }
+ function init() {
+ categories();
+ average();
+ }
+ Promise.all([new Promise(function (res, rej) {
+ var xhttp = new XMLHttpRequest();
+ xhttp.onreadystatechange = function (data) {
+ if (this.responseText) {
+ questions = JSON.parse(this.responseText);
+ res();
+ }
+ }
+ xhttp.open('get', config.json.data, true);
+ xhttp.send();
+ }), new Promise(function (res, rej) {
+ var xhttp = new XMLHttpRequest();
+ xhttp.onreadystatechange = function (data) {
+ if (this.responseText) {
+ questionsText = JSON.parse(this.responseText);
+ res();
+ }
+ }
+ xhttp.open('get', config.json.text, true);
+ xhttp.send();
+ })]).then(init);
+})();</script>

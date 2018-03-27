@@ -110,7 +110,7 @@ div#quiz-app {
                 border: solid thick $white;
                 margin: 35px auto 85px auto;
                 overflow: hidden;
-                height: 50px;
+                height: 25px;
                 div.percent-fill {
                     background-color: $green;
                     height: 50px;
@@ -141,21 +141,21 @@ div#quiz-app {
 @media only screen and (max-device-width: 480px) {
     div#quiz-app {
         width: 100%;
-        padding: 100px 0px;
+        padding: 50px 0px;
         box-sizing: border-box;
-        height: 1100px;
+        height: 625px;
         margin: 25px 0px;
         div.question {
             img {
-                width: 150px;
-                height: 150px;
+                width: 75px;
+                height: 75px;
             }
             h2 {
-                font-size: 3em;
+                font-size: 1.5em;
                 margin-top: 25px;
             }
             div.question-text {
-                font-size: 2em;
+                font-size: 1em;
                 width: 90%;
                 margin: 50px auto;
                 max-width: none;
@@ -163,30 +163,20 @@ div#quiz-app {
             }
             div.question-container {
                 div.answer-grid {
-                    font-size: 2em;
+                    font-size: 1em;
                     max-width: none;
-                    div {
-                        div.answer-bubble {
-                            height: 100px;
-                            width: 100px;
-                            div.bubble-fill {
-                                height: 94px;
-                                width: 94px;
-                            }
-                        }
-                    }
                 }
                 div.submit-btn {
-                    font-size: 2em;
+                    font-size: 1em;
                     width: 90%;
                     max-width: none;
                     margin-top: 50px;
-                    padding: 40px 0px;
+                    padding: 10px 0px;
                     border-radius: 80px;
                 }
             }
             div.answer-container {
-                font-size: 2em;
+                font-size: 1em;
                 span.answer-text {
                     font-size: 1em;
                 }

@@ -26,8 +26,7 @@ div#quiz-app {
       margin: 25px auto;
       width: 75%;
       min-width: 350px;
-      max-width: 500px;
-    text-align: center;}
+      max-width: 500px; }
     div#quiz-app div.question div.question-container div.answer-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -90,7 +89,7 @@ div#quiz-app {
         border: solid thick #D8D8D8;
         margin: 35px auto 85px auto;
         overflow: hidden;
-        height: 50px; }
+        height: 25px; }
         div#quiz-app div.question div.answer-container div.percent-bar div.percent-fill {
           background-color: #69CFAB;
           height: 50px; }
@@ -113,40 +112,34 @@ div#quiz-app {
 @media only screen and (max-device-width: 480px) {
   div#quiz-app {
     width: 100%;
-    padding: 100px 0px;
+    padding: 50px 0px;
     box-sizing: border-box;
-    height: 1100px;
+    height: 625px;
     margin: 25px 0px; }
     div#quiz-app div.question img {
-      width: 150px;
-      height: 150px; }
+      width: 75px;
+      height: 75px; }
     div#quiz-app div.question h2 {
-      font-size: 3em;
+      font-size: 1.5em;
       margin-top: 25px; }
     div#quiz-app div.question div.question-text {
-      font-size: 2em;
+      font-size: 1em;
       width: 90%;
       margin: 50px auto;
       max-width: none;
       text-align: center; }
     div#quiz-app div.question div.question-container div.answer-grid {
-      font-size: 2em;
+      font-size: 1em;
       max-width: none; }
-      div#quiz-app div.question div.question-container div.answer-grid div div.answer-bubble {
-        height: 100px;
-        width: 100px; }
-        div#quiz-app div.question div.question-container div.answer-grid div div.answer-bubble div.bubble-fill {
-          height: 94px;
-          width: 94px; }
     div#quiz-app div.question div.question-container div.submit-btn {
-      font-size: 2em;
+      font-size: 1em;
       width: 90%;
       max-width: none;
       margin-top: 50px;
-      padding: 40px 0px;
+      padding: 10px 0px;
       border-radius: 80px; }
     div#quiz-app div.question div.answer-container {
-      font-size: 2em; }
+      font-size: 1em; }
       div#quiz-app div.question div.answer-container span.answer-text {
         font-size: 1em; }
       div#quiz-app div.question div.answer-container div.percent-bar {

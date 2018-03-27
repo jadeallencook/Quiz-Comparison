@@ -2,6 +2,7 @@ $green: #69CFAB;
 $blue: #3F424F;
 $white: #D8D8D8;
 $grey: #82848B;
+
 div#quiz-comparison-app {
     width: 100%;
     max-width: 750px;
@@ -9,6 +10,7 @@ div#quiz-comparison-app {
     background-color: $blue;
     padding: 25px 0px 25px 0px;
     color: $white;
+    text-align: center;
     img.logo {
         width: 50px;
         margin: 0px auto;
@@ -54,6 +56,7 @@ div#quiz-comparison-app {
                 margin-left: -16px;
                 margin-top: 5px;
                 display: none;
+                padding-left: 0px;
                 li {
                     background-color: $white;
                     color: $grey;
@@ -61,8 +64,12 @@ div#quiz-comparison-app {
                     box-sizing: border-box;
                     padding: 5px 15px;
                 }
+                li:before {
+                    content: none;
+                }
                 li:hover {
-                    background-color: $green;
+                    background-color: #666;
+                    color: $white;
                 }
             }
         }
@@ -111,7 +118,7 @@ div#quiz-comparison-app {
             }
             div.num {
                 font-family: 'Times New Roman';
-                font-size: 2em;
+                font-size: 1.5em;
             }
         }
         div.bar-grid {
@@ -150,26 +157,30 @@ div#quiz-comparison-app {
     div#quiz-comparison-app {
         padding: 50px 0px;
         max-width: none;
-        font-size: 2em;
+        font-size: 1em;
         img.logo {
-            width: 150px;
-            height: 150px;
+            width: 75px;
+            height: 75px;
+            margin-bottom: 25px;
         }
         h2.question-title {
             font-size: 2em;
         }
         div.filters-container {
             div.dropdown {
-                width: 450px;
+                width: 250px;
                 padding: 10px 25px;
                 ul {
                     width: 502px;
                     margin-left: -26px;
                     margin-top: 11px;
+                    li {
+                        width: 302px;
+                    }
                 }
             }
             div.clear-btn {
-                width: 480px;
+                width: 275px;
                 margin-bottom: 25px;
             }
         }
@@ -184,7 +195,7 @@ div#quiz-comparison-app {
                 }
                 div.label-text {
                     line-height: 0px;
-                    padding-top: 70px;
+                    padding-top: 30px;
                 }
             }
         }

@@ -4,7 +4,8 @@ div#quiz-comparison-app {
   margin: 25px auto;
   background-color: #3F424F;
   padding: 25px 0px 25px 0px;
-  color: #D8D8D8; }
+  color: #D8D8D8;
+  text-align: center; }
   div#quiz-comparison-app img.logo {
     width: 50px;
     margin: 0px auto;
@@ -44,15 +45,19 @@ div#quiz-comparison-app {
         list-style: none;
         margin-left: -16px;
         margin-top: 5px;
-        display: none; }
+        display: none;
+        padding-left: 0px; }
         div#quiz-comparison-app div.filters-container div.dropdown ul li {
           background-color: #D8D8D8;
           color: #82848B;
           width: 100%;
           box-sizing: border-box;
           padding: 5px 15px; }
+        div#quiz-comparison-app div.filters-container div.dropdown ul li:before {
+          content: none; }
         div#quiz-comparison-app div.filters-container div.dropdown ul li:hover {
-          background-color: #69CFAB; }
+          background-color: #666;
+          color: #D8D8D8; }
     div#quiz-comparison-app div.filters-container div.clear-btn {
       background-color: #D8D8D8;
       color: #82848B;
@@ -90,7 +95,7 @@ div#quiz-comparison-app {
         text-align: left; }
       div#quiz-comparison-app div.question div.text-grid div.num {
         font-family: 'Times New Roman';
-        font-size: 2em; }
+        font-size: 1.5em; }
     div#quiz-comparison-app div.question div.bar-grid {
       display: grid;
       grid-template-columns: 20% 80%;
@@ -119,21 +124,24 @@ div#quiz-comparison-app {
   div#quiz-comparison-app {
     padding: 50px 0px;
     max-width: none;
-    font-size: 2em; }
+    font-size: 1em; }
     div#quiz-comparison-app img.logo {
-      width: 150px;
-      height: 150px; }
+      width: 75px;
+      height: 75px;
+      margin-bottom: 25px; }
     div#quiz-comparison-app h2.question-title {
       font-size: 2em; }
     div#quiz-comparison-app div.filters-container div.dropdown {
-      width: 450px;
+      width: 250px;
       padding: 10px 25px; }
       div#quiz-comparison-app div.filters-container div.dropdown ul {
         width: 502px;
         margin-left: -26px;
         margin-top: 11px; }
+        div#quiz-comparison-app div.filters-container div.dropdown ul li {
+          width: 302px; }
     div#quiz-comparison-app div.filters-container div.clear-btn {
-      width: 480px;
+      width: 275px;
       margin-bottom: 25px; }
     div#quiz-comparison-app div.question div.text-grid {
       grid-template-columns: 30% 70%; }
@@ -143,6 +151,6 @@ div#quiz-comparison-app {
         margin: 30px 0px 0px 15px; }
       div#quiz-comparison-app div.question div.bar-grid div.label-text {
         line-height: 0px;
-        padding-top: 70px; } }
+        padding-top: 30px; } }
 
 /*# sourceMappingURL=style.css.map */
