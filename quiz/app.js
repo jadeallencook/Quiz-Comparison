@@ -137,7 +137,7 @@
         elem.innerText = questionsText['question-' + (currentQuestion + 1)];
         var submitElem = document.querySelector('div.submit-btn');
         submitElem.onclick = function () {
-            ga('send', 'event', '10 Commandments Quiz', questionsText['question' + (currentQuestion + 1)], selectedAnswer);
+            if ('ga' in window) ga('send', 'event', '10 Commandments Quiz', questionsText['question' + (currentQuestion + 1)], selectedAnswer);
             console.log(selectedAnswer);
             if (selectedAnswer) loadResults();
         }

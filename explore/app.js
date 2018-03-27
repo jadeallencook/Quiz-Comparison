@@ -94,7 +94,7 @@
                         var choosenSub = categories[num].sub[parseInt(this.getAttribute('data-num'))];
                         document.querySelector('div#sub-category').innerHTML = choosenSub.text + '<ul></ul>';
                         compare(choosenSub);
-                        ga('send', 'event', '10 Commandments Explore', 'Subcategory Selected', choosenSub.text);
+                        if ('ga' in window) ga('send', 'event', '10 Commandments Explore', 'Subcategory Selected', choosenSub.text);
                         var clearElem = document.createElement('div');
                         clearElem.innerText = 'Reset';
                         clearElem.classList.add('clear-btn');
