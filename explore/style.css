@@ -37,12 +37,38 @@ div#quiz-comparison-app {
       display: block;
       text-align: left;
       margin: 15px auto;
-      width: 75%;
-      max-width: 340px;
+      width: 350px;
       padding: 5px 15px;
+      position: relative;
       cursor: pointer; }
       div#quiz-comparison-app div.filters-container div.dropdown span.arrow {
         float: right; }
+      div#quiz-comparison-app div.filters-container div.dropdown ul {
+        position: absolute;
+        width: 382px;
+        list-style: none;
+        margin-left: -16px;
+        margin-top: 5px;
+        display: none; }
+        div#quiz-comparison-app div.filters-container div.dropdown ul li {
+          background-color: #D8D8D8;
+          color: #82848B;
+          width: 100%;
+          box-sizing: border-box;
+          padding: 5px 15px; }
+        div#quiz-comparison-app div.filters-container div.dropdown ul li:hover {
+          background-color: #69CFAB; }
+    div#quiz-comparison-app div.filters-container div.clear-btn {
+      background-color: #D8D8D8;
+      color: #82848B;
+      padding: 5px 15px;
+      width: 350px;
+      margin: 0px auto;
+      cursor: pointer; }
+    div#quiz-comparison-app div.filters-container div.clear-btn:hover {
+      opacity: 0.5; }
+    div#quiz-comparison-app div.filters-container div#sub-category {
+      display: none; }
     div#quiz-comparison-app div.filters-container div.btn-container {
       display: block;
       text-align: center; }
@@ -78,14 +104,14 @@ div#quiz-comparison-app {
         text-align: center; }
       div#quiz-comparison-app div.question div.bar-grid div.percent {
         font-family: 'Times New Roman', Times, serif;
-        font-size: 3em;
+        font-size: 2em;
         text-align: left; }
       div#quiz-comparison-app div.question div.bar-grid div.bar-container {
         width: 95%;
         border: solid medium #D8D8D8;
         height: 25px;
         border-radius: 25px;
-        margin: 15px 0px 0px 15px;
+        margin: 10px 0px 0px 15px;
         overflow: hidden; }
         div#quiz-comparison-app div.question div.bar-grid div.bar-container div.bar-fill {
           background-color: #69CFAB;
