@@ -148,9 +148,9 @@ div#quiz-comparison-app {
     div#quiz-comparison-app div.question div.bar-grid {
       grid-template-columns: 30% 70%; }
       div#quiz-comparison-app div.question div.bar-grid div.bar-container {
-        margin: 30px 0px 0px 15px; }
+        margin: 10px 0px 0px 15px; }
       div#quiz-comparison-app div.question div.bar-grid div.label-text {
-        line-height: 0px;
+        line-height: 10px;
         padding-top: 30px; } }
 
 /*# sourceMappingURL=style.css.map */

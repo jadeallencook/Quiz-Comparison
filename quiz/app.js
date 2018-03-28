@@ -12,25 +12,25 @@
             loadingBar: '#69CFAB',
             highlights: '#69CFAB'
         },
-        title: 'Honesty: what counts?',
+        title: 'How do you compare?',
         options: [{
-            html: 'Often<br />okay',
-            text: 'often okay'
+            html: 'Yes',
+            text: 'yes'
         }, {
-            html: 'Sometimes<br />okay',
-            text: 'often okay'
+            html: 'Don\'t Know',
+            text: 'don\'t know'
         }, {
-            html: 'Never<br />okay',
-            text: 'never okay'
+            html: 'No',
+            text: 'no'
         }],
         logo: 'data:image/svg+xml;base64,PHN2ZyBpZD0iTGF5ZXJfMSIgZGF0YS1uYW1lPSJMYXllciAxIiB4bWxucz0iaHR0cDovL3d3dy53%0D%0AMy5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5r%0D%0AIiB2aWV3Qm94PSIwIDAgMTYyLjc0IDE4Ni44NSI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOm5v%0D%0AbmU7fS5jbHMtMntjbGlwLXBhdGg6dXJsKCNjbGlwLXBhdGgpO30uY2xzLTN7ZmlsbDojZDhkOGQ4%0D%0AO30uY2xzLTR7Y2xpcC1wYXRoOnVybCgjY2xpcC1wYXRoLTIpO30uY2xzLTV7ZmlsbDojM2Y0MjUw%0D%0AO308L3N0eWxlPjxjbGlwUGF0aCBpZD0iY2xpcC1wYXRoIj48cG9seWdvbiBjbGFzcz0iY2xzLTEi%0D%0AIHBvaW50cz0iODEuMjUgMTg2Ljg1IDAgMTQwLjAzIDAuMTIgNDYuNiA4MS40OSAwIDE2Mi43NCA0%0D%0ANi44MSAxNjIuNjIgMTQwLjI0IDgxLjI1IDE4Ni44NSIvPjwvY2xpcFBhdGg+PGNsaXBQYXRoIGlk%0D%0APSJjbGlwLXBhdGgtMiI+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNMTMyLjYsNjkuMzF2NzUuMzRI%0D%0ANzUuMzRWMTI2LjU3SDMzLjE1VjUxLjIzYzAtMTEuNjUsMTIuODItMjEuMDksMjguNjMtMjEuMDks%0D%0AMTUuNTksMCwyOC4yNiw5LjE3LDI4LjYyLDIwLjU5QTM3LDM3LDAsMCwxLDEwNCw0OC4yMkMxMTku%0D%0ANzgsNDguMjIsMTMyLjYsNTcuNjYsMTMyLjYsNjkuMzFaIi8+PC9jbGlwUGF0aD48L2RlZnM+PHRp%0D%0AdGxlPnRoZV90ZW5fdG9kYXk8L3RpdGxlPjxnIGNsYXNzPSJjbHMtMiI+PHJlY3QgY2xhc3M9ImNs%0D%0Acy0zIiB4PSItMTUuMDciIHk9Ii0xNS4wNyIgd2lkdGg9IjE5Mi44NyIgaGVpZ2h0PSIyMTYuOTgi%0D%0ALz48L2c+PGcgY2xhc3M9ImNscy00Ij48cmVjdCBjbGFzcz0iY2xzLTUiIHg9IjE4LjA4IiB5PSIx%0D%0ANS4wNyIgd2lkdGg9IjEyOS41OSIgaGVpZ2h0PSIxNDQuNjUiLz48L2c+PC9zdmc+',
         explore: {
             active: true,
-            link: '#'
+            link: 'https://www.deseretnews.com/article/900014081/explore-the-data.html'
         },
         questions: {
-            data: 'https://raw.githubusercontent.com/jadeallencook/Quiz-Comparison/master/data/lies.json',
-            text: 'https://raw.githubusercontent.com/jadeallencook/Quiz-Comparison/master/data/lies-text.json'
+            data: 'https://raw.githubusercontent.com/jadeallencook/Quiz-Comparison/master/data/commandments.json',
+            text: 'https://raw.githubusercontent.com/jadeallencook/Quiz-Comparison/master/data/commandments-text.json'
         }
     }
 

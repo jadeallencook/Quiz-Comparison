@@ -10,13 +10,17 @@ div#quiz-app {
     background-color: $blue;
     padding: 25px 0px 25px 0px;
     position: relative;
-    height: 500px;
+    height: 600px;
+    text-align: center;
     div.question {
         color: $white;
         img {
             width: 50px;
             margin: 0px auto;
             display: block;
+        }
+        div.intro {
+            margin: 25px 25px 0px 25px;
         }
         h2 {
             font-family: 'Museo Slab';
@@ -143,7 +147,7 @@ div#quiz-app {
         width: 100%;
         padding: 50px 0px;
         box-sizing: border-box;
-        height: 625px;
+        height: 700px;
         margin: 25px 0px;
         div.question {
             img {

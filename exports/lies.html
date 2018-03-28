@@ -1,0 +1,413 @@
+<style>
+    div#quiz-app {
+        width: 400px;
+        float: left;
+        margin: 15px 25px 15px 0px;
+        background-color: #3F424F;
+        padding: 25px 0px 25px 0px;
+        position: relative;
+        height: 500px;
+        text-align: center;
+    }
+
+    div#quiz-app div.question {
+        color: #D8D8D8;
+    }
+
+    div#quiz-app div.question img {
+        width: 50px;
+        margin: 0px auto;
+        display: block;
+    }
+
+    div#quiz-app div.question div.intro {
+        margin-top: 25px;
+    }
+
+    div#quiz-app div.question h2 {
+        font-family: museo-slab, "Lucida Bright", serif;
+        font-size: 1.5em;
+        font-weight: 700;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    div#quiz-app div.question span {
+        font-weight: bold;
+        margin: 25px 0px;
+        display: block;
+    }
+
+    div#quiz-app div.question div.question-text {
+        margin: 25px auto;
+        width: 75%;
+        min-width: 350px;
+        max-width: 500px;
+    }
+
+    div#quiz-app div.question div.question-container div.answer-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 500px;
+        margin: 25px auto;
+    }
+
+    div#quiz-app div.question div.question-container div.answer-grid div {
+        text-align: center;
+        font-size: 1em;
+        line-height: 1.75em;
+        line-height: 1em;
+        margin-bottom: 15px;
+    }
+
+    div#quiz-app div.question div.question-container div.answer-grid div div.answer-bubble {
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        cursor: pointer;
+        border: solid medium #D8D8D8;
+        margin: 0px auto;
+    }
+
+    div#quiz-app div.question div.question-container div.answer-grid div div.answer-bubble div.bubble-fill {
+        height: 44px;
+        width: 44px;
+        margin: 3px 0px 0px 3px;
+        background-color: #69CFAB;
+        border-radius: 100%;
+    }
+
+    div#quiz-app div.question div.question-container div.answer-grid div div.answer-bubble:hover {
+        opacity: 0.5;
+    }
+
+    div#quiz-app div.question div.question-container div.submit-btn {
+        width: 75%;
+        max-width: 500px;
+        border-radius: 50px;
+        background-color: #82848B;
+        padding: 15px;
+        text-align: center;
+        color: #D8D8D8;
+        margin: 0px auto;
+        font-weight: bold;
+    }
+
+    div#quiz-app div.question div.question-container div.submit-btn:hover {
+        opacity: 0.5;
+        cursor: pointer;
+    }
+
+    div#quiz-app div.question div.answer-container {
+        margin-top: 25px;
+        display: none;
+        text-align: center;
+    }
+
+    div#quiz-app div.question div.answer-container span {
+        font-weight: normal;
+    }
+
+    div#quiz-app div.question div.answer-container span.answer-percent {
+        display: inline-block;
+        font-size: 2em;
+        color: #69CFAB;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 100;
+        margin: 0px;
+    }
+
+    div#quiz-app div.question div.answer-container span.answer-text {
+        display: inline-block;
+        margin: 0px;
+    }
+
+    div#quiz-app div.question div.answer-container div.percent-bar {
+        width: 75%;
+        max-width: 500px;
+        border-radius: 50px;
+        border: solid thick #D8D8D8;
+        margin: 35px auto 85px auto;
+        overflow: hidden;
+        height: 25px;
+    }
+
+    div#quiz-app div.question div.answer-container div.percent-bar div.percent-fill {
+        background-color: #69CFAB;
+        height: 50px;
+    }
+
+    div#quiz-app div.question div.answer-container div.percent-bar-title {
+        width: 75%;
+        text-align: left;
+        margin: 25px auto 0px auto;
+        max-width: 500px;
+    }
+
+    div#quiz-app div.question div.answer-container div.next-btn {
+        width: 100%;
+        background-color: #82848B;
+        color: #D8D8D8;
+        position: absolute;
+        bottom: 0px;
+        padding: 25px 0px;
+        cursor: pointer;
+    }
+
+    div#quiz-app div.question div.answer-container div.next-btn:hover {
+        opacity: 0.5;
+    }
+
+    @media only screen and (max-device-width: 480px) {
+        div#quiz-app {
+            width: 100%;
+            padding: 50px 0px;
+            box-sizing: border-box;
+            height: 650px;
+            margin: 25px 0px;
+        }
+        div#quiz-app div.question div.intro {
+            margin: 25px;
+        }
+        div#quiz-app div.question img {
+            width: 75px;
+            height: 75px;
+        }
+        div#quiz-app div.question h2 {
+            font-size: 1.5em;
+            margin: 15px;
+            line-height: 1em;
+        }
+        div#quiz-app div.question div.question-text {
+            font-size: 1em;
+            width: 90%;
+            margin: 25px auto;
+            max-width: none;
+            text-align: center;
+            padding: 0px 15px;
+            box-sizing: border-box;
+        }
+        div#quiz-app div.question div.question-container div.answer-grid {
+            font-size: 1em;
+            max-width: none;
+        }
+        div#quiz-app div.question div.question-container div.submit-btn {
+            font-size: 1em;
+            width: 90%;
+            max-width: none;
+            margin-top: 25px;
+            padding: 10px 0px;
+            border-radius: 80px;
+        }
+        div#quiz-app div.question div.answer-container {
+            font-size: 1em;
+        }
+        div#quiz-app div.question div.answer-container span.answer-text {
+            font-size: 1em;
+        }
+        div#quiz-app div.question div.answer-container div.percent-bar {
+            margin-top: 50px;
+        }
+        div#quiz-app div.question div.answer-container div.next-btn {
+            font-size: 1em;
+        }
+    }
+</style>
+
+<div id="quiz-app">
+    <div class="question">
+        <img class="question-logo" alt="stone tablets logo">
+        <h2 class="question-title">loading...</h2>
+        <div class="intro">Do you think that lying in this situation is ok?</div>
+        <div class="question-text">loading...</div>
+        <div class="question-container">
+            <div class="answer-grid"></div>
+            <div class="submit-btn">SUBMIT</div>
+        </div>
+        <div class="answer-container">
+            You and
+            <span class="answer-percent">0%</span>
+            of participants
+            <br /> nationwide answered "
+            <span class="answer-text">n/a</span>."
+            <div class="percent-bar">
+                <div class="percent-fill"></div>
+            </div>
+            <div class="next-btn">Next</div>
+        </div>
+    </div>
+</div>
+
+<script>
+    /*
+                     Developed by Jade Allen Cook 2018
+                     Designed by Tamsin Himes 2018
+                     Orginally Produced for Deseret News
+                    */
+    (function () {
+        var config = {
+            colors: {
+                background: '#3F424F',
+                loadingBar: '#69CFAB',
+                highlights: '#69CFAB'
+            },
+            title: 'Honesty: what counts?',
+            options: [{
+                html: 'Often<br />okay',
+                text: 'often okay'
+            }, {
+                html: 'Sometimes<br />okay',
+                text: 'sometimes okay'
+            }, {
+                html: 'Never<br />okay',
+                text: 'never okay'
+            }],
+            logo: 'http://cdn.deseretnews.com/media/misc/interactive/2018-ten-today/images/stone-tablets.svg',
+            explore: {
+                active: true,
+                link: 'https://www.deseretnews.com/indepth/ten-today'
+            },
+            questions: {
+                data: 'http://cdn.deseretnews.com/media/misc/interactive/2018-ten-today/data/lies.json',
+                text: 'http://cdn.deseretnews.com/media/misc/interactive/2018-ten-today/data/lies-text.json'
+            }
+        }
+        var questions, questionsText;
+        var selectedAnswer, currentQuestion = 0;
+
+        function loadTitle() {
+            var elem = document.querySelector('h2.question-title');
+            elem.innerText = config.title;
+        }
+
+        function loadLogo() {
+            var elem = document.querySelector('img.question-logo');
+            elem.setAttribute('src', config.logo);
+        }
+
+        function changeBackgroundColor() {
+            var elem = document.querySelector('div#quiz-app');
+            if (config.colors.background) {
+                elem.style.backgroundColor = config.colors.background;
+            }
+        }
+
+        function initSetup() {
+            loadTitle();
+            loadLogo();
+            changeBackgroundColor();
+            loadQuestion();
+        }
+
+        function selectOption(selected) {
+            var optionElems = document.getElementsByClassName('answer-bubble');
+            for (var y = 0; y < optionElems.length; y++) {
+                optionElem = optionElems[y];
+                optionElem.innerHTML = null;
+            }
+            var fill = document.createElement('div');
+            fill.classList.add('bubble-fill');
+            if (config.colors.highlights) fill.style.backgroundColor = config.colors.highlights;
+            selected.appendChild(fill);
+        }
+
+        function loadOptions() {
+            selectedAnswer = null;
+            var elem = document.querySelector('div.answer-grid');
+            elem.innerHTML = null;
+            var options = config.options;
+            for (var x = 0; x < options.length; x++) {
+                var optionText = options[x];
+                var optionTextElem = document.createElement('div');
+                optionTextElem.innerHTML = optionText.html;
+                elem.appendChild(optionTextElem);
+            }
+            for (var x = 0; x < options.length; x++) {
+                var optionBubbleContainer = document.createElement('div');
+                var optionBubble = document.createElement('div');
+                optionBubble.classList.add('answer-bubble');
+                optionBubble.setAttribute('data-answer', (x + 1));
+                optionBubbleContainer.appendChild(optionBubble);
+                optionBubble.onclick = function () {
+                    selectOption(this);
+                    var answer = parseInt(this.getAttribute('data-answer'));
+                    selectedAnswer = answer;
+                }
+                elem.appendChild(optionBubbleContainer);
+            }
+        }
+
+        function loadResults() {
+            document.querySelector('div.question-container').style.display = 'none';
+            document.querySelector('div.answer-container').style.display = 'block';
+            var answer = questions['question-' + (currentQuestion + 1) + '-' + selectedAnswer];
+            var percent = Math.round(answer.avg * 100) + '%';
+            var percentElem = document.querySelector('span.answer-percent');
+            percentElem.innerText = percent;
+            if (config.colors.highlights) percentElem.style.color = config.colors.highlights;
+            var percentBar = document.querySelector('div.percent-fill');
+            percentBar.style.width = percent;
+            if (config.colors.loadingBar) percentBar.style.backgroundColor = config.colors.loadingBar;
+            document.querySelector('span.answer-text').innerText = config.options[(selectedAnswer - 1)].text;
+            var nextBtn = document.querySelector('div.next-btn');
+            if ((currentQuestion + 1) < Object.keys(questionsText).length) {
+                nextBtn.onclick = function () {
+                    currentQuestion++;
+                    loadQuestion();
+                }
+            } else {
+                if (config.explore.active) {
+                    nextBtn.innerHTML = 'Read More About This';
+                    nextBtn.onclick = function () {
+                        if ('ga' in window) {
+                            ga('send', 'event', 'Lies Quiz', 'Read more', true);
+                        }
+                        window.location = config.explore.link;
+                    }
+                } else {
+                    nextBtn.style.display = 'none';
+                }
+            }
+        }
+
+        function loadQuestion() {
+            document.querySelector('div.answer-container').style.display = 'none';
+            document.querySelector('div.question-container').style.display = 'block';
+            loadOptions();
+            var elem = document.querySelector('div.question-text');
+            elem.innerText = questionsText['question-' + (currentQuestion + 1)];
+            var submitElem = document.querySelector('div.submit-btn');
+            submitElem.onclick = function () {
+                if ('ga' in window) {
+                    var question = questionsText['question-' + (currentQuestion + 1)];
+                    var answerText = config.options[selectedAnswer - 1].text;
+                    ga('send', 'event', 'Lies Quiz', question, answerText);
+                }
+                if (selectedAnswer) loadResults();
+            }
+        }
+        Promise.all([new Promise(function (res, rej) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function (data) {
+                if (this.responseText) {
+                    questions = JSON.parse(this.responseText);
+                    res();
+                }
+            }
+            xhttp.open('get', config.questions.data, true);
+            xhttp.send();
+        }), new Promise(function (res, rej) {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function (data) {
+                if (this.responseText) {
+                    questionsText = JSON.parse(this.responseText);
+                    res();
+                }
+            }
+            xhttp.open('get', config.questions.text, true);
+            xhttp.send();
+        })]).then(function () {
+            initSetup();
+        });
+    })();
+</script>

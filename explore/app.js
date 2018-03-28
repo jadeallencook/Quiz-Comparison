@@ -13,26 +13,8 @@
                 text: 'Evangelical Protestant',
                 slug: 'e-prot'
             }, {
-                text: 'Black Protestant',
-                slug: 'b-prot'
-            }, {
                 text: 'Catholic',
                 slug: 'cath'
-            }, {
-                text: 'Orthodox',
-                slug: 'ortho'
-            }, {
-                text: 'Conservative Non-Traditional',
-                slug: 'conserve'
-            }, {
-                text: 'Liberal Non-Traditional',
-                slug: 'liberal'
-            }, {
-                text: 'Jewish',
-                slug: 'jew'
-            }, {
-                text: 'Other',
-                slug: 'other'
             }, {
                 text: 'Unafilliated',
                 slug: 'unafill'
